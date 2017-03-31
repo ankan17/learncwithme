@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>My awesome blog!</title>
-</head>
-<body>
-	<p>This is going to be awesome soon</p>
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="home-content">
+	<h1 class="page-heading">Take a look at my recent posts</h1>
+	<ul class="post-list">
+		{% for post in site.posts limit: 5 %}
+		<li class="post">
+			<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+			<a href="{{ site.baseurl }}{{ post.url }}" class="recent-post"><h1 class="post-title">{{ post.title }} - <span class="post-meta">{{ post.meta }}</span></h1></a>
+				<p class="post-desc text-justify">{{ post.description }}</p>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
