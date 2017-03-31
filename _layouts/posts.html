@@ -15,10 +15,10 @@ layout: default
 		  	<span class="glyphicon glyphicon glyphicon-menu-left" aria-hidden="true"></span> Previous: {{ page.previous_post }}
 	    </a></div>
 
-	  	<div class="current  col-md-4"><a href="https://drive.google.com/drive/folders/0B_OA-RV12Ahna0lHUlJEZzh2czg"> Download as PDF: {{ page.title }} </a></div>
+	  	<div class="current  col-md-4"><a href="{{ page.link }}"> Download as PDF: {{ page.title }} </a></div>
 
 	  	{% else %}
-		<div class="current  col-md-4 col-md-offset-4"><a href="https://drive.google.com/drive/folders/0B_OA-RV12Ahna0lHUlJEZzh2czg"> Download as PDF: {{ page.title }} </a></div>
+		<div class="current  col-md-4 col-md-offset-4"><a href="{{ page.link }}"> Download as PDF: {{ page.title }} </a></div>
 
 	    {% endif %}
 
