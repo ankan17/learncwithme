@@ -13,25 +13,21 @@ comments: true
 </div>
 
 <div class="container navigation">
-    <div class="row">
-
     	{% if page.previous.url %}
-      	<div class="col-xs-4"><a class="btn btn-danger btn-lg" href="{{ site.baseurl }}{{ page.previous.url }}">
-    	  	<span class="glyphicon glyphicon glyphicon-menu-left" aria-hidden="true"></span> Previous: {{ page.previous.title }}
-        </a></div>
+      	<a class="btn btn-danger btn-lg" href="{{ site.baseurl }}{{ page.previous.url }}">
+    	  	<span class="glyphicon glyphicon glyphicon-menu-left" aria-hidden="true"></span>Previous<span class="hidden-xs">: {{ page.previous.title }}</span>
+        </a>
 
-        <div class="col-xs-4"><a class="btn btn-primary btn-lg" href="{{ page.link }}"> Download as PDF </a></div>
+        <a class="btn btn-primary btn-lg" href="{{ page.link }}"> Download<span class="hidden-xs"> as Pdf </span></a>
 
       	{% else %}
-        <div class="col-xs-4 col-xs-offset-4"><a class="btn btn-primary btn-lg" href="{{ page.link }}"> Download as PDF </a></div>
+        <a class="btn btn-primary btn-lg" href="{{ page.link }}"> Download<span class="hidden-xs"> as Pdf </span> </a>
 
         {% endif %}
 
         {% if page.next.url %}
-        <div class="col-xs-4"><a class="btn btn-success btn-lg" href="{{ site.baseurl }}{{ page.next.url }}">
-      		Next: {{ page.next.title }} <span class="glyphicon glyphicon glyphicon-menu-right align-right" aria-hidden="true"></span>
-        </a></div>
+        <a class="btn btn-success btn-lg" href="{{ site.baseurl }}{{ page.next.url }}">
+      		Next<span class="hidden-xs">: {{ page.next.title }} </span><span class="glyphicon glyphicon glyphicon-menu-right align-right" aria-hidden="true"></span>
+        </a>
         {% endif %}
-
-    </div>
 </div>

@@ -2,7 +2,7 @@
 layout: posts
 title: Hello.c
 meta: Writing and compiling your first C program
-description: From why, we move on to how. With the most famous program that beginners are taught, the 'Hello World' program, I have tried to explain how each and every line of the program works. Learn about "behind-the-scenes" knowledge of the compilation process, the main() function and much more which is required to build your knowledge for in-depth understanding of the language.
+description: From why, move on to how! From the compilation process to the main() function to the C syntax rules, this tutorial covers it all and much more.
 link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/2_hello_c.pdf
 ---
 
@@ -11,14 +11,14 @@ link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/2_hello_c.pdf
 </div>
 
 <div class="col-xs-12">
-    {% highlight c %}
-        #include <stdio.h>
+{% highlight c %}
+#include <stdio.h>
 
-        /* Main function */
-        int main() {
-            printf("Hello World");
-            return 0;
-        }{% endhighlight %}
+/* Main function */
+int main() {
+    printf("Hello World");
+    return 0;
+}{% endhighlight %}
 </div>
 
 <div class="col-xs-12">
@@ -87,12 +87,14 @@ link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/2_hello_c.pdf
     <p>We saw that comments are useless lines written within the code which are omitted when the program is translated into machine code. So why write it? I have said that it is a good programming practice to leave comments. Why? Though comments don’t have any effect on the usual processing of the program, it helps a programmer to understand whatever they want to understand later when they revisit their old codes or see other people’s code. In a long program, comments before every small section helps other people to easily understand the program and this increases the portability of the program. I will outline the rules and regulations neccessary to write comments in C:</p>
     <ol>
         <li>Comments should be enclosed within /* */. Using this we can even write multi-line comments like
-            {% highlight c %}
-                /* This is a
-                multi-line comment */ {% endhighlight %} </li>
+{% highlight c %}
+/* This is a
+multi-line comment */ {% endhighlight %}
+        </li>
         <li>Single line comments are written after //. For example:
-            {% highlight c %}
-                // This is a single-line comment {% endhighlight %} </li>
+{% highlight c %}
+// A single-line comment {% endhighlight %}
+        </li>
         <li>Since comments are only for programmers, we can type anything in here and get away with it. Normal syntax rules of C don’t apply here. We can write in both lower and upper cases and even a combination of both within a comment.</li>
     </ol>
 </div>

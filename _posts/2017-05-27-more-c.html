@@ -2,7 +2,7 @@
 layout: posts
 title: More C
 meta: A look into some theoretical concepts
-description: With a lot of insight into the theoretical aspects of C, this tutorial explains a lot of key topics including the C character set, variables and data types and tokens.
+description: With a lot of insight into the theoretical aspects of C, this tutorial explains many key topics including variables, data types and tokens.
 link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/3_more_c.pdf
 ---
 
@@ -11,22 +11,22 @@ link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/3_more_c.pdf
 </div>
 
 <div class="col-xs-12">
-    {% highlight c %}
-        #include <stdio.h>
-        #include <conio.h>
+{% highlight c %}
+#include <stdio.h>
+#include <conio.h>
 
-        int main() {
-            clrscr();
-            int radius;
-            float area;
+int main() {
+    clrscr();
+    int radius;
+    float area;
 
-            radius = 5;
-            area = 3.14*radius*radius;
+    radius = 5;
+    area = 3.14*radius*radius;
 
-            printf("Area of the circle is %f\n", area);
-            getch();
-            return 0;
-        }{% endhighlight %}
+    printf("Area of the circle is %f\n", area);
+    getch();
+    return 0;
+}{% endhighlight %}
 </div>
 
 <div class="col-xs-12">
@@ -138,13 +138,7 @@ link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/3_more_c.pdf
         <li><strong>Identifiers:</strong> Identifiers are used as the general terminology for the names of variables belonging to all data types. These are user defined names consisting of arbitrarily long sequence of letters and digits following the rules mentioned above for naming a variable. For example: var_name, _age, gender, new12, etc.</li>
         <li><strong>Constants:</strong> C constants refers to the data items that do not change their value during the program execution. Several types of C constants that are allowed in C are:
             <ul>
-                <li>Integer Constants
-                    <ul>
-                        <li>Decimal Integer Constants</li>
-                        <li>Octal Integer Constants</li>
-                        <li>Hexadecimal Integer Constants</li>
-                    </ul>
-                </li>
+                <li>Integer Constants</li>
                 <li>Real Constants</li>
                 <li>Character Constants</li>
                 <li>Escape Sequences or Backslash Character Constants</li>
@@ -157,12 +151,12 @@ link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/3_more_c.pdf
     </ol>
 
     <p>Everything will be discussed in great detail, you just have to bear with me. For now I would like to clarify tokens furthermore by classifying the tokens used in our program above. They maybe classified as follows:</p>
-    <p style="margin-left: 80px;"><strong>Keywords:</strong> int float return </p>
-    <p style="margin-left: 80px;"><strong>Identifiers:</strong> main clrscr radius area </p>
-    <p style="margin-left: 80px;"><strong>Constants:</strong> 5 3.14 \n 0 </p>
-    <p style="margin-left: 80px;"><strong>Strings:</strong> “Area of the circle is” </p>
-    <p style="margin-left: 80px;"><strong>Special Symbols:</strong> ( { } ) </p>
-    <p style="margin-left: 80px; margin-top: -5px;"><strong>Operators:</strong><span style="font-size: 1.5em; line-height: 1.2em;"> * = </span></p>
+    <p style="margin-left: 40px;"><strong>Keywords:</strong> int float return </p>
+    <p style="margin-left: 40px;"><strong>Identifiers:</strong> main clrscr radius area </p>
+    <p style="margin-left: 40px;"><strong>Constants:</strong> 5 3.14 \n 0 </p>
+    <p style="margin-left: 40px;"><strong>Strings:</strong> “Area of the circle is” </p>
+    <p style="margin-left: 40px;"><strong>Special Symbols:</strong> ( { } ) </p>
+    <p style="margin-left: 40px; margin-top: -5px;"><strong>Operators:</strong><span style="font-size: 1.5em; line-height: 1.2em;"> * = </span></p>
 
     <p>I hope this clears everything about the different types of tokens. In further tutorials we’ll take up basic data types alongwith modifiers one-by-one and then we’ll look into constants and from there we’ll see where it goes.</p>
 </div>

@@ -12,7 +12,7 @@ $(document).ready (function() {
     $("#navbar-sticky").affix ({
         offset: {
             top : parseInt($("header").css('height')),
-            bottom : parseInt($('#contact').css('height'))+100
+            bottom : parseInt($('#contact').css('height'))+200
         }
     });
 });
