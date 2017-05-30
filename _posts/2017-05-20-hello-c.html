@@ -2,7 +2,7 @@
 layout: posts
 title: Hello.c
 meta: Writing and compiling your first C program
-description: This tutorial moves on from why to how. I have illustrated most famous program that beginners are taught, the 'Hello World' program. With this example I have tried to explain why and how each and every line of the program works. There is a lot of theory and "behind-the-scenes" knowledge of the compilation process, main() function and much more which is required to build your knowledge for in-depth understanding of the language.
+description: From why, we move on to how. With the most famous program that beginners are taught, the 'Hello World' program, I have tried to explain how each and every line of the program works. Learn about "behind-the-scenes" knowledge of the compilation process, the main() function and much more which is required to build your knowledge for in-depth understanding of the language.
 link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/2_hello_c.pdf
 ---
 
@@ -15,14 +15,14 @@ link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/2_hello_c.pdf
         #include <stdio.h>
 
         /* Main function */
-        int main (){
+        int main() {
             printf("Hello World");
             return 0;
         }{% endhighlight %}
 </div>
 
 <div class="col-xs-12">
-    <p>We’ll start from the first line. What the heck does “#include <stdio.h>” mean? You can see that it is called #include directive. Would it make sense if I told you this line tells the preprocessor to include the contents of the header file stdio.h into the compiled code of the program? Probably not. So many fancy terms, ehh? I will break it down later in this tutorial I promise. For now it will suffice to understand that the #include directive tells the compiler about what some of the following lines (line 5, in this case) are going to mean. What I mean is by using this line we are telling the compiler about what printf on the 5th line is going to do.</p>
+    <p>We’ll start from the first line. What the heck does “<code>#include &lt;stdio.h&gt;</code>” mean? It is called the #include directive. Would it make sense if I told you this line tells the preprocessor to include the contents of the header file stdio.h into the compiled code of the program? Probably not. So many fancy terms, ehh? I will break it down later in this tutorial I promise. For now it will suffice to understand that the #include directive tells the compiler about what some of the following lines (line 5, in this case) are going to mean. What I mean is by using this line we are telling the compiler about what printf on the 5th line is going to do.</p>
     <p>On the 3rd line we have a comment. Comments are useless for the compiler. They are only for the programmers. It is a good practice to write comments whenever you write a program. We’ll learn about comments a bit later in this tutorial itself. And then from line 4 through 7, we have the heart of our program, the main function. The essence of the whole program lies in this block of code only. The program won’t run without a main function. But what is a main function, what is its “function” and why is it so important after all? To begin with, what is a function? So many questions! I will try to answer them as soon as I can. But first things first, where do we write the program and how do we compile it? Let me answer that first.</p>
 </div>
 
@@ -84,7 +84,7 @@ link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/2_hello_c.pdf
 
 <div class="col-xs-12">
     <h3 class="text-left">Comments in C</h3>
-    <p>We saw that comments are useless lines written within the code which are omitted when the program is translated into machine code. So why write it? I have said that it is a good programming practice to leave comments. Why? Though comments don’t have any effect on the usual processing of the program, it helps a programmer to understand whatever they want to understand later when they revisit their old codes or see other people’s code. In a long program, comments before every small section helps other people to easily understand the program and this increases the portability of the program. I will outline the rules and regulations neccessary to write comments in C:
+    <p>We saw that comments are useless lines written within the code which are omitted when the program is translated into machine code. So why write it? I have said that it is a good programming practice to leave comments. Why? Though comments don’t have any effect on the usual processing of the program, it helps a programmer to understand whatever they want to understand later when they revisit their old codes or see other people’s code. In a long program, comments before every small section helps other people to easily understand the program and this increases the portability of the program. I will outline the rules and regulations neccessary to write comments in C:</p>
     <ol>
         <li>Comments should be enclosed within /* */. Using this we can even write multi-line comments like
             {% highlight c %}

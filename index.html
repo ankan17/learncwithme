@@ -4,6 +4,9 @@ layout: default
 
 <header>
     <div class="container-fluid"></div>
+    <img class="outer" src="{{ site.baseurl }}/images/outer.png">
+    <img class="inner" src="{{ site.baseurl }}/images/inner.png">
+    <img class="text" src="{{ site.baseurl }}/images/text.png">
     <a class="move-down"><span class="glyphicon glyphicon-chevron-down"></span></a>
 </header>
 <div class="row">
@@ -17,7 +20,7 @@ layout: default
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-offset-1 col-md-3 col-xs-offset-2 col-xs-6">
+                <div class="col-md-offset-1 col-md-3 col-xs-offset-3 col-xs-6">
                     <div class="my-image"></div>
                     <ul>
                         <li class="hidden-sm hidden-xs"><span class="lead">Name        : </span><span class="info">Ankan Poddar</span></li>
@@ -26,7 +29,7 @@ layout: default
                         <li class="hidden-sm hidden-xs"><span class="lead">Studying At : </span><span class="info">NIT Durgapur</span></li>
                     </ul>
                 </div>
-                <div class="col-md-7 col-xs-10">
+                <div class="col-md-8 col-xs-12">
                         <p class="text-justify"> Since you're here, you realize that a self-obsessed guy is going to talk about himself. Let me do that. My journey started from a small town in Bihar, and hence I had no exposure to programming and computer science whatsoever. But I had an interest, and a computer, and yeah, also a slow internet connection which helped me learn a lot about computers, not programming though. </p>
                         <p class="text-justify"> Then I came to West Bengal for higher studies and I joined a course with computer science as my fifth subject. Frankly, I was scared to see that all my peers had done quite a bit of programming and I was a complete zero. But I had the will to learn and I have learnt a lot over those two years. I joined a Computer Science and Engineering course in National Institute of Technology, Durgapur. Once I was here, I was overwhelmed to see how many people approached me to teach them programming just so they could pass the exams. </p>
                         <p class="text-justify"> All this has led me to start this blog. This blog is for them who think that C is very tough to learn. I started this blog so that I can help beginners to learn C and help those who already know about C to strengthen their grasp and I also learn a lot in the process. I wish everyone will have a good time learning about C here. Cheers. </p>
@@ -38,7 +41,7 @@ layout: default
         <!-- Recent Section -->
         <div class="container-fluid" id="recent">
             <div class="row">
-                <div class="col-xs-offset-1 col-xs-11">
+                <div class="col-xs-offset-1 col-xs-12">
                 	<h1 class="heading">Take a look at my recent posts</h1>
                 	<ul class="post-list">
                 		{% for post in site.posts limit: 5 %}

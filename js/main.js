@@ -38,8 +38,31 @@ $(window).scroll (function() {
 
 function applyPageHeader() {
     var winHeight = parseInt($(window).innerHeight());
+    var winWidth = parseInt($(window).innerWidth());
     var height = winHeight-55;
-    $('header').css({ height: height + 'px' });
+    var outerWidth  = parseInt(height/594*327);
+    var innerHeight = parseInt(height*50/100);
+    var innerWidth  = parseInt(innerHeight/291*206);
+    var textHeight  = parseInt(height*7/100);
+    var textWidth   = parseInt(textHeight/52*528);
+
+    $('header').css({
+        height: height + 'px'
+    });
+
+    $('.outer').css({
+        'margin-left' : -parseInt(outerWidth/2)
+    });
+
+    $('.inner').css({
+        'margin-left' : -parseInt(innerWidth/2),
+        'margin-top'  : -parseInt(innerHeight/2)
+    });
+
+    $('.text').css({
+        'margin-left' : -parseInt(textWidth/2),
+        'margin-top'  : -parseInt(textHeight/2)
+    });
 }
 
 function transparentize() {

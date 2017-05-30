@@ -1,0 +1,168 @@
+---
+layout: posts
+title: More C
+meta: A look into some theoretical concepts
+description: With a lot of insight into the theoretical aspects of C, this tutorial explains a lot of key topics including the C character set, variables and data types and tokens.
+link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/3_more_c.pdf
+---
+
+<div class="col-xs-12">
+    <p>Those of you who tried to run the previous program on <strong>TurboC/C++</strong> (I know there are only a few of you), might have encountered a problem. You just saved and ran the program, but as you pressed <kbd>Ctrl+F9</kbd> on your keyboard or ran it from the menu, it just sat there and did nothing. What happened? I am telling you it ran. How am I so sure? I know my code was correct. So what? Maybe you typed it incorrectly? In that case, you would have encountered some form of error. But if you did not encounter an error, then I am telling you that code ran. Then, why didn’t you see it? Actually, you were not fast enough. No human is. Admit it, we, humans, are not faster than computers. Actually, the output just showed up and vanished just like that. So, how to fix that? I am going to tell you that and a lot more in this tutorial. On the other hand, those of you who compiled the code in GCC must have seen it work just fine. Now just take a look at the following piece of code.</p>
+</div>
+
+<div class="col-xs-12">
+    {% highlight c %}
+        #include <stdio.h>
+        #include <conio.h>
+
+        int main() {
+            clrscr();
+            int radius;
+            float area;
+
+            radius = 5;
+            area = 3.14*radius*radius;
+
+            printf("Area of the circle is %f\n", area);
+            getch();
+            return 0;
+        }{% endhighlight %}
+</div>
+
+<div class="col-xs-12">
+    <p>Woah! So many new things. Let’s digest it slowly over a few tutorials. Firstly, I need to fix the problem of the output not showing up. How to do that? For that, you need to include a header file called <strong>conio.h</strong> <i>(line 2)</i>. And on the line previous to return statement, write a call to the <code>getch()</code> function residing in <strong>conio.h</strong> <i>(line 13)</i>. What does it do? It would tell the output screen, “Hey there! Where do you think you are going? Hold it there man!”. And the output screen freezes up right there. It would be interesting if they could converse like that, ehh? I will tell you what happens actually. <code>getch()</code> means get character. Its purpose is to read a single byte character from the input. Freezing up the output screen is actually a side-effect of its actual purpose. It makes the program wait until we enter some character. As long as we don’t type anything from the keyboard, it waits and voila! We can see the output. <strong>Conio.h</strong> contains another useful function <code>clrscr()</code>, whose job is to clear up the output screen whenever it is called. Keep it in your program so that things don’t get messy when you run a program multiple times. Having known about that, let’s see what C allows us to type in a program.</p>
+</div>
+
+<div class="col-xs-12">
+    <h3 class="text-left">The C character set</h3>
+    <p>A character is obviously any alphabet, digit or special symbol used to represent any information. C allows the following set of characters.</p>
+    <table class="character-set">
+        <tr>
+            <td class="character-type">Alphabets</td>
+            <td class="characters">A, B, C, ..., X, Y, Z<br />a, b, c, ..., x, y, z</td>
+        </tr>
+        <tr>
+            <td class="character-type">Digits</td>
+            <td class="characters">0, 1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+        </tr>
+        <tr>
+            <td class="character-type">Special Symbols</td>
+            <td class="characters">~ ` ! @ # $ % ^ &amp; * ( ) _ - + = | \ { }<br /> [ ] : ; &quot; &#39; &lt; &gt; , . ? /</td>
+        </tr>
+    </table>
+    <p>It is time we start breaking down the above program and slowly begin to understand what is what and how it works. For that we need to know what are variables, data types and tokens (Oh no! Some more definitions!).</p>
+</div>
+
+<div class="col-xs-12">
+    <h3 class="text-left">Variables and Data Types</h3>
+    <p>From nursery we grew up learning mathematics. At first we were adding constant numbers (or subtracting or multiplying for that matter) and we were happy. But then came algebra (oh no)! In algebra we encountered x,y and what not. These were variables. These exist even in C. We use variables in C to be more dynamic (I mean come on, dynamic is the new sexy!). Suppose we want the user to enter some value and we need to store it. What do we do? We use variables to hold the value. If we wish to calculate a value and store it, we use variables. For example, in the piece of code at the beginning of this tutorial, the variables are radius and area. So how do the variables store the data? I’ll explain that in the next tutorial. For now, we need to know another super important thing that is the rules governing the naming of a variable. These are:</p>
+    <ol>
+        <li><strong>The length of a variable name may be any characters long but some old compilers only care about the first 31 characters.</strong> I don’t know who would want to do that, but if any of you want to name your variables more than 31 characters just make sure the <strong>first 31 characters are not same. Modern compilers like GCC have no such limit.</strong></li>
+        <li><strong>Variable name can consist of only alphabets (both lower or upper case), digits or underscore _.</strong></li>
+        <li><strong>Variable name must start with an alphabet or an underscore.</strong></li>
+        <li><strong>No commas or blanks are allowed within a variable name.</strong></li>
+        <li><strong>No special symbol should be used other than underscore.</strong></li>
+        <li><strong>A variable name cannot be a keyword</strong> (what are keywords, read on to find out).</li>
+        <li>This one is not a rule, but I would like to mention that though creating unnecessarily long variable names is a waste of effort, but as a good programming practice, <strong>variable names should be such that when you re-visit your old code or someone else sees it, they should understand what each variable is there for.</strong></li>
+    </ol>
+    <p>Some invalid variable names will be like B’day, $hello, while, #HASH, dot., _main(), total%, etc. Decide on why these are invalid.</p>
+</div>
+
+<div class="col-xs-12">
+    <p>Variables can be used to store different types of data. That maybe simple or complex. What separates one from the other is the data type. In C we need to declare the data type for the variable we are going to use. C supports four different data types.</p>
+    <ol>
+        <li><strong>Basic data types:</strong> These are the data types on which arithmetic can be performed. C has 3 basic data types:
+            <ul><li>Integer type</li>
+                <li>Floating-point type</li>
+                <li>Character type</li></ul>
+            In addition to that, we have 5 modifiers: long, short, signed, unsigned and long long. Modifiers are used to change the basic properties of these basic data types when required.</li>
+        <li><strong>Enumerated data type:</strong> They are again arithmetic types and they are used to define variables that can only attain certain discrete integer values throughout the program.</li>
+        <li><strong>Void data types:</strong> Type specifier void indicates that no value is available. So what do we use it for! All in good time.</li>
+        <li><strong>Derived data types:</strong> They are derived using the basic data types. Derived types include: array, structure, union, function and pointer.</li>
+    </ol>
+</div>
+
+<div class="col-xs-12">
+    <h3 class="text-left">Tokens or Lexical Units</h3>
+    <p>The smallest unit of a C program is called a token or a lexical unit (so, we are really breaking down the program, huh!). Tokens in C can be of 6 types:</p>
+    <ol>
+        <li><strong>Keywords:</strong> C keywords are the words that convey a special meaning to the C compiler, that is, the compiler already knows what these words mean. As such, these words can’t be used to name any variables. There are 32 keywords in C which are listed as follows.
+            <table class="keywords">
+                <tr>
+                    <td>auto</td>
+                    <td>break</td>
+                    <td>case</td>
+                    <td>const</td>
+                    <td>char</td>
+                </tr>
+                <tr>
+                    <td>continue</td>
+                    <td>default</td>
+                    <td>do</td>
+                    <td>double</td>
+                    <td>else</td>
+                </tr>
+                <tr>
+                    <td>enum</td>
+                    <td>extern</td>
+                    <td>float</td>
+                    <td>for</td>
+                    <td>goto</td>
+                </tr>
+                <tr>
+                    <td>if</td>
+                    <td>int</td>
+                    <td>long</td>
+                    <td>register</td>
+                    <td>return</td>
+                </tr>
+                <tr>
+                    <td>short</td>
+                    <td>signed</td>
+                    <td>sizeof</td>
+                    <td>static</td>
+                    <td>struct</td>
+                </tr>
+                <tr>
+                    <td>switch</td>
+                    <td>typedef</td>
+                    <td>union</td>
+                    <td>unsigned</td>
+                    <td>void</td>
+                </tr>
+                <tr>
+                    <td>volatile</td>
+                    <td>while</td>
+                </tr>
+            </table></li>
+        <li><strong>Identifiers:</strong> Identifiers are used as the general terminology for the names of variables belonging to all data types. These are user defined names consisting of arbitrarily long sequence of letters and digits following the rules mentioned above for naming a variable. For example: var_name, _age, gender, new12, etc.</li>
+        <li><strong>Constants:</strong> C constants refers to the data items that do not change their value during the program execution. Several types of C constants that are allowed in C are:
+            <ul>
+                <li>Integer Constants
+                    <ul>
+                        <li>Decimal Integer Constants</li>
+                        <li>Octal Integer Constants</li>
+                        <li>Hexadecimal Integer Constants</li>
+                    </ul>
+                </li>
+                <li>Real Constants</li>
+                <li>Character Constants</li>
+                <li>Escape Sequences or Backslash Character Constants</li>
+                <li>String Constants</li>
+            </ul>
+        </li>
+        <li><strong>Strings:</strong> Strings are sequences of characters enclosed within double quotes. A string is automatically terminated with a null character by the compiler. For example: “hello”, “new”, etc.</li>
+        <li>Special Symbols: They hold special meaning for the compiler and hence cannot be used for any other purpose. For example: (, ), {, }, [, ], etc.</li>
+        <li><strong>Operators:</strong> C operators are symbols that triggers an action when applied to C variables and other objects. The data items on which operators act upon are called operands. For example: +, -, *, etc.</li>
+    </ol>
+
+    <p>Everything will be discussed in great detail, you just have to bear with me. For now I would like to clarify tokens furthermore by classifying the tokens used in our program above. They maybe classified as follows:</p>
+    <p style="margin-left: 80px;"><strong>Keywords:</strong> int float return </p>
+    <p style="margin-left: 80px;"><strong>Identifiers:</strong> main clrscr radius area </p>
+    <p style="margin-left: 80px;"><strong>Constants:</strong> 5 3.14 \n 0 </p>
+    <p style="margin-left: 80px;"><strong>Strings:</strong> “Area of the circle is” </p>
+    <p style="margin-left: 80px;"><strong>Special Symbols:</strong> ( { } ) </p>
+    <p style="margin-left: 80px; margin-top: -5px;"><strong>Operators:</strong><span style="font-size: 1.5em; line-height: 1.2em;"> * = </span></p>
+
+    <p>I hope this clears everything about the different types of tokens. In further tutorials we’ll take up basic data types alongwith modifiers one-by-one and then we’ll look into constants and from there we’ll see where it goes.</p>
+</div>
