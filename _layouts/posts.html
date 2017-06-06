@@ -18,10 +18,12 @@ comments: true
     	  	<span class="glyphicon glyphicon glyphicon-menu-left" aria-hidden="true"></span>Previous<span class="hidden-xs">: {{ page.previous.title }}</span>
         </a>
 
-        <a class="btn btn-primary btn-lg" href="{{ page.link }}"> Download<span class="hidden-xs"> as Pdf </span></a>
+        {% if page.link %}<a class="btn btn-primary btn-lg" href="{{ page.link }}"> Download<span class="hidden-xs"> as Pdf </span></a>
+        {% endif %}
 
       	{% else %}
-        <a class="btn btn-primary btn-lg" href="{{ page.link }}"> Download<span class="hidden-xs"> as Pdf </span> </a>
+        {% if page.link %}<a class="btn btn-primary btn-lg" href="{{ page.link }}"> Download<span class="hidden-xs"> as Pdf </span> </a>
+        {% endif %}
 
         {% endif %}
 
