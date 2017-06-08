@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: true
 ---
 
 <div class="container post-content">
@@ -11,6 +10,14 @@ comments: true
     	{{ content }}
     </div>
 </div>
+
+{% if page.comments %}
+<div class="container">
+    <div class="col-md-offset-2 col-md-8 col-xs-12">
+        <div class="fb-comments" data-href="https://ankan17.github.io/learncwithme{{ page.url }}" data-numposts="5" data-width="650"></div>
+    </div>
+</div>
+{% endif %}
 
 <div class="container navigation">
     	{% if page.previous.url %}
