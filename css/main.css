@@ -2,18 +2,6 @@
 
 ---
 
-/* -----------------------------------Fonts----------------------------------- */
-
-@font-face {
-	font-family: cabin;
-	src: url({{ site.baseurl }}/fonts/Cabin-Regular.otf);
-}
-
-@font-face {
-	font-family: Raleway;
-	src: url({{ site.baseurl }}/fonts/Raleway-Regular.ttf);
-}
-
 /* -----------------------------------Animations----------------------------------- */
 
 @keyframes wiggle {
@@ -107,12 +95,12 @@
 
     .footer .left p {
         margin-bottom: 10px;
-        font-family: cabin;
+        font-family: 'Cabin', sans-serif;
         font-size: 1.5em;
     }
 
     .footer .left a {
-        font-family: Raleway;
+        font-family: 'Raleway', sans-serif;
         font-size: 2em;
         color: #262626;
     }
@@ -172,20 +160,20 @@
     }
 
     .footer .right p:nth-child(1) {
-        font-family: Raleway;
+        font-family: 'Raleway', sans-serif;
         font-size: 1.5em;
         margin-bottom: 20px;
     }
 
     .footer .right p:nth-child(3) {
-        font-family: cabin;
+        font-family: 'Cabin', sans-serif;
         font-size: 1.3em;
         line-height: 1.8em;
         margin-top: 25px;
     }
 
     .footer .right a {
-        font-family: cabin, sans-serif;
+        font-family: 'Cabin', sans-serif;
         font-size: 1.5em;
         font-weight: 100;
         color: #444;
@@ -215,279 +203,7 @@
         font-size: 1.8em;
     }
 
-/* -----------------------------------Index----------------------------------- */
-
-    /* Header */
-
-    header {
-        position: relative;
-        background: url("{{ site.baseurl }}/images/bg.jpg");
-        background-position: center center;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        border: none;
-    }
-
-    header .container-fluid {
-        max-width: 100%;
-    }
-
-    header .outer {
-        position: absolute;
-        top: 0;
-        left: 40%;
-        height: 100%;
-    }
-
-    header .inner {
-        position: absolute;
-        top: 50%;
-        left: 41%;
-        height: 50%;
-    }
-
-    header .text {
-        position: absolute;
-        top: 50%;
-        height: 7%;
-        left: 52%;
-    }
-
-    /*header .outer {
-        background-color: pink;
-        background-image: url({{ site.baseurl }}/images/outer.png);
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 100%;
-        margin: 0 auto;
-        z-index: 100;
-    }
-
-    header .inner {
-        background-image: url({{ site.baseurl }}/images/inner.png);
-        background-color: blue;
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 80%;
-    }*/
-
-    header .move-down {
-        position: absolute;
-        right: 60px;
-        bottom: 40px;
-        height: 80px;
-        width: 80px;
-        padding: 25px;
-        font-size: 30px;
-        background-color: #424242;
-        border-radius: 5px;
-    }
-
-    header .move-down .glyphicon {
-        color: rgba(255, 255, 255, 0.8);
-        animation-name: wiggle;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-    }
-
-    header .move-down:hover {
-        cursor: pointer;
-    }
-
-    /* Sticky Navbar */
-
-    .navbar-sticky {
-        margin: 0;
-        padding: 0;
-        border: none;
-        border-radius: 0;
-        z-index: 5;
-        background-color: #fff;
-    }
-
-    .navbar-sticky .nav {
-        padding: 0;
-        width: 90px;
-        right: 50px;
-    }
-
-    .affix-top {
-        position: absolute;
-        top: 60px;
-    }
-
-    .affix-bottom {
-        position: absolute;
-        top: 60px;
-    }
-
-    .affix {
-        top: 120px;
-    }
-
-    .navbar-sticky .nav li {
-        display: block;
-        width: 100%;
-        text-align: center;
-        background-color: #242424;
-    }
-
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-        background-color: #000;
-        color: #fff;
-    }
-
-    .navbar-sticky .nav li a {
-        color: rgba(255, 255, 255, 0.7);
-        padding: 20px 10px;
-    }
-
-    .navbar-sticky .nav li a:hover {
-        color: rgba(255, 255, 255, 0.5);
-    }
-
-    .navbar-sticky .nav li a:active {
-        color: rgba(255, 255, 255, 0.7);
-    }
-
-    .navbar-sticky .nav li:not(:last-child) {
-        border-bottom: 2px solid rgba(0,0,00,0.7);
-    }
-
-    /* About Me Section */
-
-    #about-me {
-        padding-top: 40px;
-    }
-
-    #about-me h1 {
-        font-family: sans-serif;
-        font-weight: 200;
-        letter-spacing: -2px;
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
-
-    #about-me p.lead::after {
-        content: "";
-        width: 60%;
-        display: block;
-        border-bottom: 1px solid #9a9a9a;
-        margin: 25px auto 50px auto;
-    }
-
-    #about-me .text-justify {
-        font-family: Raleway;
-        font-size: 16px;
-    }
-
-    #about-me .my-image {
-        background: url("https://scontent.fccu2-1.fna.fbcdn.net/v/t1.0-9/17796505_1256630784413355_1818376978811784134_n.jpg?oh=86a171747fd0eaa6598a8c542427158b&oe=59A3089A");
-        background-position: center center;
-        background-size: contain;
-        border-radius: 50%;
-        margin: 0 auto 20px auto;
-        height: 180px;
-        width: 180px;
-        margin-top: -10px;
-    }
-
-    #about-me ul {
-        list-style: none;
-        padding: 0;
-        width: 170px;
-        margin: 30px auto 0 auto;
-    }
-
-    #about-me ul li {
-        margin-top: 10px;
-    }
-
-    #about-me li span.lead {
-        font-size: 18px;
-    }
-
-    #about-me li span.info {
-        font-family: Raleway;
-        font-size: 15px;
-    }
-
-    /* Recent Section */
-
-    #recent {
-        padding-top: 40px;
-    }
-
-    #recent .heading {
-    	font-size: 1.5em;
-    	margin: 40px 50px 0 50px;
-    }
-
-    #recent .post-list {
-    	list-style: none;
-    }
-
-    #recent .post {
-    	margin: 50px 0;
-    	border-left: 2px solid #2161af;
-    	padding: 0 30px;
-    }
-
-    #recent .post .date {
-    	font-size: 1em;
-    	color: #737373;
-    }
-
-    #recent .post a:hover {
-    	cursor: pointer;
-    	text-decoration: none;
-    }
-
-    #recent .post .title {
-    	font-size: 2.2em;
-        font-weight: 400;
-    	margin-bottom: 20px;
-    	color: #2161af;
-    	position: relative;
-    }
-
-    #recent .post .title:hover {
-    	color: #1a406b;
-    }
-
-    #recent .post .title::after {
-    	content: "";
-    	position: absolute;
-    	display: inline-block;
-    	border-bottom: 2px solid transparent;
-    	width: 0;
-    	bottom: 0;
-    	left: 0;
-    	-webkit-transition: all 0.7s ease-in-out 0s;
-    	transition: all 0.7s ease-in-out 0s;
-    }
-
-    #recent .post .title:hover::after {
-        border-bottom: 2px solid #406b99;
-        width: 100%;
-    }
-
-    #recent .post .meta {
-    	font-size: 0.85em;
-    }
-
-    #recent .post .desc {
-    	font: 400 0.9em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-
-/*a > div {
-	text-decoration: none;
-	color: #000;
-}*/
+{% include css/index.css %}
 
 /* -----------------------------------Posts----------------------------------- */
 
@@ -501,27 +217,27 @@
     }
 
     .post-content h2 {
-    	font-family: Raleway;
+    	font-family: 'Raleway', sans-serif;
     	text-align: center;
     	font-size: 2em;
     	margin-bottom: 25px;
     }
 
     .post-content h3 {
-    	font-family: Raleway;
+    	font-family: 'Raleway', sans-serif;
     	font-size: 1.9em;
     	margin-bottom: 20px;
     }
 
     .post-content h4 {
-    	font-family: Raleway;
+    	font-family: 'Raleway', sans-serif;
     	font-size: 1.7em;
     	margin-bottom: 20px;
         margin-left: 10px;
     }
 
     .post-content h5 {
-    	font-family: Raleway;
+    	font-family: 'Raleway', sans-serif;
     	font-size: 1.2em;
     	margin-bottom: 20px;
         font-weight: 800;
@@ -529,7 +245,7 @@
 
     .post-content p, li, td {
     	text-align: justify;
-    	font: 16px/1.5 Raleway;
+    	font: 16px/1.5 'Raleway', sans-serif;
     }
 
     .post-content p {
@@ -552,7 +268,7 @@
     }
 
     .post-content ol ul li, .post-content ul ol li {
-        font-family: Raleway;
+        font-family: 'Raleway', sans-serif;
         font-size: 1em;
     }
 
@@ -773,7 +489,7 @@
 
     .post-content p, li, td {
     	text-align: justify;
-    	font: 14px/1.5 Raleway;
+    	font: 14px/1.5 'Raleway', sans-serif;
     }
 
     .post-content pre code {
@@ -871,3 +587,5 @@
         left: 55%;
     }
 }
+
+{% include css/archive.css %}

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="container-fluid">
+    <div class="row" id="archive">
+        <h1 class="text-center">Archive</h1>
+        <p class="text-center lead hidden-xs">The place where you'll find all my posts</p>
+        <p class="text-center lead hidden-lg hidden-md hidden-sm">Find all my posts here</p>
+        <div class="col-xs-12" id="c-tutorial-series">
+            <h3>C Tutorial Series</h3>
+            <ul>{% for post in site.categories.c-tutorial-series reversed %}
+                <li><a><span class="title">{{ post.serial }}. {{ post.title }}</span><span class="meta hidden xs"> - {{ post.meta }}</a> ( <span class="date">{{ post.date | date: "%B %d, %Y" }}</span> )</li>
+            {% endfor %}</ul>
+        </div>
+    </div>
+</div>
