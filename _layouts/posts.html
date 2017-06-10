@@ -12,9 +12,11 @@ layout: default
 </div>
 
 {% if page.comments %}
-<div class="container">
-    <div class="col-md-offset-2 col-md-8 col-xs-12">
-        <div class="fb-comments" data-href="https://ankan17.github.io/learncwithme{{ page.url }}" data-numposts="5" data-width="650"></div>
+<div class="container-fluid">
+    <div class="col-xs-12">
+        <div class="container-fluid comments" style="margin: 0 auto;">
+            <div class="fb-comments" data-href="https://ankan17.github.io/learncwithme{{ page.url }}" data-numposts="5"></div>
+        </div>
     </div>
 </div>
 {% endif %}

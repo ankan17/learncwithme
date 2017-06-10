@@ -4,17 +4,8 @@ $(document).ready (function() {
     clickScrollDown();
     provideAge();
     scrollToSection();
-    $('body').scrollspy({
-        target: ".navbar-sticky",
-        offset: 50
-    });
-
-    $("#navbar-sticky").affix ({
-        offset: {
-            top : parseInt($("header").css('height')),
-            bottom : parseInt($('#contact').css('height'))+200
-        }
-    });
+    applyStickyNavbar();
+    provideCommentBoxSize();
 });
 
 $(window).resize (function() {
@@ -23,17 +14,6 @@ $(window).resize (function() {
 
 $(window).scroll (function() {
     transparentize();
-    //showNavbarSticky();
-    // var top;
-    // if ($('.navbar-sticky').hasClass('affix-top')) {
-    //     top = parseInt($('.page-header').css('height')) + 150;
-    // }
-    // else if ($('.navbar-sticky').hasClass('affix')) {
-    //     top = 200;
-    // }
-    // $('.navbar-sticky').css ({
-    //     'top' : top + 'px'
-    // });
 });
 
 function applyPageHeader() {
@@ -103,25 +83,6 @@ function provideAge() {
     $('#about-me ul li:nth-child(2) .info').html(age + " yrs");
 }
 
-function showNavbarSticky() {
-    var pos = parseInt($('header').css('height'))+150
-    var translation = $(this).scrollTop() - pos + $(this).innerHeight()/2 - parseInt($('.navbar-sticky ul li').css('height'))*2;
-    $('.navbar-sticky').css ({
-        'top': pos + 'px'
-    });
-    if (translation > 0 && ($(this).scrollTop()+$(this).innerHeight()) < $('#contact').offset().top+30) {
-        $('.navbar-sticky').css ({
-            'transform' : 'translate(0, ' + translation + 'px)'
-        });
-    }
-    else {
-        $('.navbar-sticky').css ({
-            'position': 'absolute',
-            'top': pos + 'px'
-        });
-    }
-}
-
 function scrollToSection() {
     $('a[href^="#"]').click (function(e) {
         e.preventDefault();
@@ -131,4 +92,29 @@ function scrollToSection() {
         }, 600);
         console.log ($(window).scrollTop(), $(target).offset().top);
     });
+}
+
+function applyStickyNavbar() {
+    $('body').scrollspy({
+        target: ".navbar-sticky",
+        offset: 50
+    });
+
+    $("#navbar-sticky").affix ({
+        offset: {
+            top : parseInt($("header").css('height')),
+            bottom : parseInt($('#contact').css('height'))+200
+        }
+    });
+}
+
+function provideCommentBoxSize() {
+    if ($(window).width() > 991) {
+        $('.fb-comments').attr({
+            'data-width' : '700'
+        });
+        $('.comments').css({
+            'width' : $('.fb-comments').attr('data-width')
+        });
+    }
 }
