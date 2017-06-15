@@ -86,23 +86,22 @@
 
     #archive h3 {
         font-size: 20px;
-        margin: 30px auto 30px 10px;
+        margin: 10px auto 20px 10px;
     }
 
     #archive ul {
-        list-style: none;
-        margin-left: 20px;
+        margin-left: -5px;
     }
 
     #archive ul li .title {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     #archive ul li .meta {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #archive ul li .date {
-        font-size: 12px;
+        font-size: 11px;
     }
 }

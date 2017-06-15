@@ -106,6 +106,7 @@ header .move-down:hover {
 .navbar-sticky .nav li a {
     color: rgba(255, 255, 255, 0.7);
     padding: 20px 10px;
+    font-size: 16px;
 }
 
 .navbar-sticky .nav li a:hover {
@@ -130,8 +131,12 @@ header .move-down:hover {
     font-family: sans-serif;
     font-weight: 200;
     letter-spacing: -2px;
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 15px;
+}
+
+#about-me p.lead {
+    font-size: 25px;
 }
 
 #about-me p.lead::after {
@@ -143,8 +148,8 @@ header .move-down:hover {
 }
 
 #about-me .text-justify {
-    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    line-height: 25px;
 }
 
 #about-me .my-image {
@@ -162,7 +167,7 @@ header .move-down:hover {
     list-style: none;
     padding: 0;
     width: 170px;
-    margin: 30px auto 0 auto;
+    margin: 50px auto 0 auto;
 }
 
 #about-me ul li {
@@ -170,11 +175,10 @@ header .move-down:hover {
 }
 
 #about-me li span.lead {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 #about-me li span.info {
-    font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
 
@@ -185,8 +189,8 @@ header .move-down:hover {
 }
 
 #recent .heading {
-	font-size: 1.5em;
-	margin: 40px 50px 0 50px;
+	font-size: 23px;
+	margin: 40px 50px 0 20px;
 }
 
 #recent .post-list {
@@ -200,7 +204,7 @@ header .move-down:hover {
 }
 
 #recent .post .date {
-	font-size: 1em;
+	font-size: 15px;
 	color: #737373;
 }
 
@@ -210,7 +214,7 @@ header .move-down:hover {
 }
 
 #recent .post .title {
-	font-size: 2.2em;
+	font-size: 30px;
     font-weight: 400;
 	margin-bottom: 20px;
 	color: #2161af;
@@ -221,27 +225,74 @@ header .move-down:hover {
 	color: #1a406b;
 }
 
-#recent .post .title::after {
-	content: "";
-	position: absolute;
-	display: inline-block;
-	border-bottom: 2px solid transparent;
-	width: 0;
-	bottom: 0;
-	left: 0;
-	-webkit-transition: all 0.7s ease-in-out 0s;
-	transition: all 0.7s ease-in-out 0s;
-}
-
-#recent .post .title:hover::after {
-    border-bottom: 2px solid #406b99;
-    width: 100%;
-}
-
 #recent .post .meta {
-	font-size: 0.85em;
+	font-size: 25px;
 }
 
 #recent .post .desc {
-	font: 400 0.9em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 400 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* -----------------------------------Media Queries----------------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    #about-me {
+        padding-top: 0;
+    }
+
+    #about-me h1 {
+        margin-top: 5px;
+        font-size: 35px;
+    }
+
+    #about-me p.lead {
+        font-size: 18px;
+    }
+
+    #about-me .text-justify {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #recent {
+        padding-top: 20px;
+    }
+
+    #recent .heading {
+        margin: 0;
+        font-size: 19px;
+    }
+
+    #recent .post-list {
+        padding-left: 0;
+    }
+
+    #recent .post {
+        padding-right: 0;
+    }
+
+    #recent .post .date {
+        font-size: 14px;
+    }
+
+    #recent .post .title {
+        font-size: 25px;
+    }
+
+    #recent .post .meta {
+        font-size: 18px;
+    }
+
+    #recent .post .desc {
+        font-size: 13px;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1032px) {
+    header .text {
+        left: 55%;
+    }
 }

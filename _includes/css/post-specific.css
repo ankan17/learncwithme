@@ -1,0 +1,161 @@
+/* ---------------------------------Post 3--------------------------------- */
+
+.character-set tr td {
+    border-right: 1px solid #333;
+}
+
+.character-set tr td:nth-child(1) {
+    font-size: 19px;
+    background-color: #e0eeff;
+}
+
+.keywords tr td:nth-child(1) {
+    background-color: #e0eeff;
+    border-right: 1px solid rgba(50, 0, 0, 0.3);
+}
+
+.keywords tr:nth-child(1) td {
+    background-color: #e0eeff;
+    border-bottom: 1px solid rgba(100, 0, 0, 0.2);
+}
+
+.tokens {
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+/* ---------------------------------Post 4--------------------------------- */
+
+.range tr td {
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.range tr:nth-child(1) td {
+    font-size: 18px;
+    background-color: #cea1ed;
+}
+
+.image-4-1 {
+    width: 385px;
+}
+
+.image-4-2 {
+    width: 300px;
+}
+
+.image-4-5, .image-4-6, .image-4-7 {
+    width: 275px;
+}
+
+.image-4-3 {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-4-4, .image-4-8, .image-4-9, .image-4-10 {
+    width: 325px;
+}
+
+/* ---------------------------------Post 5--------------------------------- */
+
+.image-5-1, .image-5-2 {
+    width: 350px;
+}
+
+.image-5-3, .image-5-4 {
+    width: 320px;
+}
+
+.image-5-5, .image-5-6 {
+    width: 520px;
+    margin: 25px auto;
+}
+
+.modifiers tr td {
+    font-size: 15px;
+    border-right: 1px solid #333;
+}
+
+.modifiers tr:nth-child(1) td, .modifiers tr:nth-child(2) td {
+    background-color: #e9d7f7;
+    font-weight: 800;
+    border-bottom: 1px solid #333;
+}
+
+/* ---------------------------------Post 6--------------------------------- */
+
+.image-6-1 {
+    width: 360px;
+    margin: 25px auto;
+}
+
+.image-6-2 {
+    width: 360px;
+    margin-bottom: 20px;
+}
+
+.denormal-numbers-container, .float-modifiers-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.post-content .denormal-numbers, .post-content .float-modifiers {
+    margin: 0;
+}
+
+.post-content .denormal-numbers tr td {
+    font-size: 14px;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.post-content .denormal-numbers tr:nth-child(1) td, .post-content .denormal-numbers tr td:nth-child(1) {
+    font-size: 15px;
+    background-color: #e9d7f7;
+    font-weight: 800;
+}
+
+.float-modifiers tr td {
+    border-right: 1px solid #333;
+}
+
+.float-modifiers tr:nth-child(1) td {
+    background-color: #e9d7f7;
+    font-weight: 800;
+    border-bottom: 1px solid #333;
+}
+
+.float-modifiers tr td:nth-child(1) {
+    background-color: #e9d7f7;
+    font-weight: 800;
+}
+
+.float-modifiers tr:nth-child(2) td {
+    font-weight: 800;
+    background-color: #e9d7f7;
+    border-bottom: 1px solid #333;
+}
+
+
+/* -----------------------------------Media Queries----------------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    .post-content .character-set tr td:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .post-content .range tr:nth-child(1) td {
+        font-size: 16px;
+    }
+
+    .post-content .denormal-numbers tr td {
+        font-size: 11px;
+    }
+
+    .post-content .denormal-numbers tr:nth-child(1) td, .post-content .denormal-numbers tr td:nth-child(1) {
+        font-size: 13px;
+    }
+}

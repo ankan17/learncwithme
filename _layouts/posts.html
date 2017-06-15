@@ -2,12 +2,14 @@
 layout: default
 ---
 
-<div class="container post-content">
+<div post="{{ page.serial }}" class="container post-content">
     <div class="row">
-	    <h1>{{ page.title }}</h1>
+        <h1>{{ page.title }}</h1>
     	<h2>{{ page.meta }}</h2>
     	<p class="content-date"><strong>{{ page.date | date: "%B %d, %Y" }}</strong></p>
-    	{{ content }}
+        <div class="col-xs-12">
+            {{ content }}
+        </div>
     </div>
 </div>
 
@@ -22,7 +24,7 @@ layout: default
 {% endif %}
 
 <div class="container navigation">
-    	{% if page.previous.url %}
+    	{% if page.previous.url and page.previous.category != "practice" %}
       	<a class="btn btn-danger btn-lg" href="{{ site.baseurl }}{{ page.previous.url }}">
     	  	<span class="glyphicon glyphicon glyphicon-menu-left" aria-hidden="true"></span>Previous<span class="hidden-xs">: {{ page.previous.title }}</span>
         </a>

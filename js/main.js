@@ -6,6 +6,24 @@ $(document).ready (function() {
     scrollToSection();
     applyStickyNavbar();
     provideCommentBoxSize();
+    showAnswer();
+    if ($('.post-content')) {
+        if ('img') {
+            var length = $('img')['length'];
+            var i, name;
+            for (i=0;i<length;i++) {
+                name = 'img:eq(' + i + ')';
+                $(name).addClass($(name).attr('alt') + " img-responsive");
+            }
+        }
+        if ($('.post-content').attr('post') == "3") {
+            $('table:eq(0)').addClass("character-set");
+            $('table:eq(1)').addClass("keywords");
+        }
+        if ($('.post-content').attr('post') == "4") {
+            $('table:eq(0)').addClass("range");
+        }
+    }
 });
 
 $(window).resize (function() {
@@ -117,4 +135,19 @@ function provideCommentBoxSize() {
             'width' : $('.fb-comments').attr('data-width')
         });
     }
+}
+
+function showAnswer() {
+    $('.show-answer').click(function(e) {
+        var button = $(this);
+        var solution = ($(this).parent()).children('.solution');
+        $(solution).slideToggle(350, function() {
+            if ($(button).html() == "View Answer") {
+                $(button).html("Hide Answer");
+            }
+            else if ($(button).html() == "Hide Answer") {
+                $(button).html("View Answer");
+            }
+        });
+    });
 }

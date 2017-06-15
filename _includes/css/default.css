@@ -1,0 +1,263 @@
+html {
+    position: relative;
+    min-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: 55px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 9px 0;
+}
+
+/* Navbar */
+
+.site-navbar {
+    border-bottom: 1px solid #bbb;
+    border-top: 3px solid #333;
+    margin-bottom: 0;
+}
+
+.site-navbar ul.nav li a {
+    font-size: 18px;
+}
+
+.brand {
+    height: 50px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    padding: 2px 15px 0 15px;
+    line-height: 50px;
+    color: #424242;
+}
+
+.brand:hover {
+    color: #424242;
+}
+
+.brand::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #666;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.brand:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0.9);
+  transform: scaleX(0.9);
+}
+
+/* Footer */
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 0;
+    margin-top: 70px;
+    color: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #ccc;
+}
+
+.footer .container {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.footer .left p {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
+
+.footer .left a {
+    font-size: 45px;
+    color: #262626;
+}
+
+.footer .left a:hover {
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer .center h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer .center ul {
+    list-style: none;
+    width: 150px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer .center li a {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+
+.footer .center li a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.footer .fa {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer .fa-facebook-square {
+    color: #3B5998;
+}
+
+.footer .fa-google-plus-square {
+    color: #DD4B39;
+}
+
+.footer .fa-github {
+    color: #444444;
+}
+
+.footer .fa-pinterest {
+    color: #CB2027;
+}
+
+.footer .fa-quora {
+    color: rgba(200,0,0,0.8);
+}
+
+.footer .right p:nth-child(1) {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer .right a {
+    font-family: 'Cabin', sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    color: #444;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid #bfbfbf;
+}
+
+.footer .right p:nth-child(3) {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    line-height: 1.8em;
+    margin-top: 25px;
+}
+
+.footer .right a:hover {
+    text-decoration: none;
+    color: #444;
+    cursor: pointer;
+}
+
+.footer .row2::before {
+    content: "";
+    width: 60%;
+    margin: 30px auto;
+    display: block;
+    border: 1px solid #898989;
+}
+
+.footer .glyphicon-heart {
+    color: rgba(200, 0, 0, 0.8);
+}
+
+.footer .row2 {
+    font-size: 24px;
+}
+
+
+/* -----------------------------------Media Queries----------------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    .site-navbar ul.nav li a {
+        font-size: 16px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+
+    .footer .container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .footer .col-xs-12:not(first-child) {
+        margin-top: 40px;
+    }
+
+    .footer .left, .footer .right {
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer .left p {
+        margin-bottom: 20px;
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .footer .left a {
+        font-size: 35px;
+    }
+
+    .footer .row2::before {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .footer .row2 .col-xs-12 {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 992px)  {
+
+    .footer .center h4 {
+        font-size: 20px;
+    }
+
+    .footer .right p:nth-child(1) {
+        font-size: 1.3em;
+    }
+
+    .footer .right a {
+        font-size: 1.3em;
+    }
+
+    .brand:hover:before {
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+    }
+}

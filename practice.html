@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="row" id="practice">
+    <h1 class="text-center">Practice</h1>
+    <p class="text-center lead"><span class="hidden-xs">Practice brings perfection.</span> Hone your C skills with some challenging questions.</p>
+    <div class="col-xs-12 practice">
+        <h3>Crazy With C - <span class="lead">Try solving some challenging output questions</span></h3>
+        <ol>{% for post in site.categories.practice reversed %}
+                {% if post.sub-category == "crazy-with-c" %}
+                    <li><a href="{{ site.baseurl }}{{ post.url }}"><span class="title">{{ post.title }} - {{ post.serial }}</span></a></li>
+                {% endif %}
+        {% endfor %}</ol>
+    </div>
+    <div class="col-xs-12 practice">
+        <h3>Code Like Pro! - <span class="lead">Get your hands dirty with some coding problems</span></h3>
+        <ol>{% for post in site.categories.practice reversed %}
+                {% if post.sub-category == "code-like-pro" %}
+                    <li><a href="{{ site.baseurl }}{{ post.url }}"><span class="title">{{ post.title }} - {{ post.serial }}</span></a></li>
+                {% endif %}
+        {% endfor %}</ol>
+    </div>
+</div>

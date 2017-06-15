@@ -45,12 +45,22 @@ layout: default
                 <div class="col-md-offset-1 col-md-11 col-xs-12">
                     <h1 class="heading">Take a look at my recent posts</h1>
                     <ul class="post-list">
-                        {% for post in site.posts reversed limit:5 %}
-                        <li class="post">
-                            <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                            <a href="{{ site.baseurl }}{{ post.url }}"><h1 class="title text-left">{{ post.title }} - <span class="meta">{{ post.meta }}</span></h1></a>
-                                <p class="desc text-justify">{{ post.description }}</p>
-                        </li>
+                        {% assign post_count = 0 %}
+                        {% for post in site.posts %}
+                            {% if post.category == "practice" %}
+                                {% continue %}
+                            {% else %}
+                                {% assign post_count = post_count | plus: 1 %}
+                                <li class="post">
+                                    <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                                    <a href="{{ site.baseurl }}{{ post.url }}"><h1 class="title text-left">{{ post.title }} - <span class="meta">{{ post.meta }}</span></h1></a>
+
+                                    <p class="desc text-justify">{{ post.description }}</p>
+                                </li>
+                                {% if post_count == 5 %}
+                                    {% break %}
+                                {% endif %}
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
