@@ -53,12 +53,16 @@
 
 .post-content li {
     text-align: justify;
-    font: 16px/1.5 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
     margin: 8px 0;
 }
 
 .post-content pre {
     padding: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
     border: none;
     max-width: 100%;
     overflow: auto;
@@ -100,6 +104,12 @@
     padding: 5px 10px;
     text-align: center;
     font-size: 16px;
+}
+
+.post-content table tr th {
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 18px;
 }
 
 .post-content .img-responsive {
@@ -171,8 +181,13 @@
     }
 
     .post-content table tr td {
-        padding: 5px;
+        padding: 4px;
         font-size: 13px;
+    }
+
+    .post-content table tr th {
+        padding: 5px 8px;
+        font-size: 15px;
     }
 
     .post-content .indented {

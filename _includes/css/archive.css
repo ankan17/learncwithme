@@ -64,9 +64,11 @@
 }
 
 @media(max-width: 768px) {
+
     #archive {
         width: 100%;
         padding: 0;
+        padding-bottom: 20px;
     }
 
     #archive h1 {
@@ -86,11 +88,15 @@
 
     #archive h3 {
         font-size: 20px;
-        margin: 10px auto 20px 10px;
+        margin: 20px auto 25px 10px;
     }
 
     #archive ul {
         margin-left: -5px;
+    }
+
+    #archive ul li {
+        margin-top: 12px;
     }
 
     #archive ul li .title {

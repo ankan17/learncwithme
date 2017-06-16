@@ -23,6 +23,10 @@ $(document).ready (function() {
         if ($('.post-content').attr('post') == "4") {
             $('table:eq(0)').addClass("range");
         }
+        if ($('.post-content').attr('post') == "7") {
+            $('table:eq(0)').addClass("ascii-values");
+            $('table:eq(1)').addClass("escape-sequences");
+        }
     }
 });
 
