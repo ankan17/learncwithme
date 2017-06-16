@@ -17,7 +17,7 @@ layout: default
         <h3>Code Like Pro! - <span class="lead">Get your hands dirty with some coding problems</span></h3>
         <ol>{% for post in site.categories.practice reversed %}
                 {% if post.sub-category == "code-like-pro" %}
-                    <li><a href="{{ site.baseurl }}{{ post.url }}"><span class="title">{{ post.title }} - {{ post.serial }}</span></a></li>
+                    <li><a href="{{ site.baseurl }}{{ post.url }}"><span class="title">{{ post.title }}</span></a></li>
                 {% endif %}
         {% endfor %}</ol>
     </div>

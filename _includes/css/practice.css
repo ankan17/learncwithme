@@ -148,6 +148,66 @@
     text-decoration: none;
 }
 
+#code-like-pro {
+    width: 85%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#code-like-pro h1 {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+#code-like-pro p.lead {
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#code-like-pro p.lead::after {
+    content: "";
+    width: 80%;
+    display: block;
+    margin: 30px auto;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+#code-like-pro ol {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+#code-like-pro ol li {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#code-like-pro p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+#code-like-pro .solution {
+    font-size: 30px;
+    text-align: center;
+    margin: 60px auto;
+}
+
+#code-like-pro .solution a {
+    cursor: pointer;
+}
+
+#code-like-pro a:hover {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
 
     #practice {
@@ -208,7 +268,6 @@
     }
 
     #crazy-with-c p.lead::after {
-        content: "";
         width: 100%;
         margin: 10px auto 30px auto;
     }
@@ -251,5 +310,52 @@
     #crazy-with-c .col-xs-12 p {
         font-size: 14px;
         line-height: 26px;
+    }
+
+    #code-like-pro {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    #code-like-pro h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    #code-like-pro p.lead {
+        font-size: 30px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    #code-like-pro p.lead::after {
+        width: 100%;
+        margin: 35px auto 20px auto;
+    }
+
+    #code-like-pro .col-xs-12 {
+        padding: 0;
+    }
+
+    #code-like-pro ol {
+        padding-left: 25px;
+    }
+
+    #code-like-pro ol li {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    #code-like-pro p {
+        font-size: 17px;
+        line-height: 26px;
+        margin-top: 20px;
+        /*text-align: left;*/
+    }
+
+    #code-like-pro .solution {
+        font-size: 26px;
+        margin: 20px auto;
     }
 }
