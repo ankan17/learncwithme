@@ -143,8 +143,31 @@
 
 @media only screen and (max-width: 768px) {
 
+    .content-date {
+        font-size: 13px;
+    }
+
+    .post-content h1 {
+        font-size: 52px;
+    }
+
+    .post-content h2 {
+        font-size: 25px;
+    }
+
+    .post-content h3 {
+        font-size: 26px;
+    }
+
+    .post-content h4 {
+        font-size: 20px;
+    }
+
+    .post-content h5 {
+        font-size: 17px;
+    }
+
     .post-content p, .post-content li {
-        text-align: justify;
         font-size: 14px;
     }
 
@@ -152,22 +175,6 @@
         margin-left: 0;
         font-size: 11px;
         line-height: 18px;
-    }
-
-    .post-content h1 {
-        font-size: 5em;
-    }
-
-    .post-content h2 {
-        font-size: 1.75em;
-    }
-
-    .post-content h3 {
-        font-size: 1.6em;
-    }
-
-    .post-content h4 {
-        font-size: 1.5em;
     }
 
     .post-content pre.output {

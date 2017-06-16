@@ -13,7 +13,7 @@ $(document).ready (function() {
             var i, name;
             for (i=0;i<length;i++) {
                 name = 'img:eq(' + i + ')';
-                $(name).addClass($(name).attr('alt') + " img-responsive");
+                $(name).addClass("img-responsive " + $(name).attr('alt'));
             }
         }
         if ($('.post-content').attr('post') == "3") {
@@ -26,6 +26,9 @@ $(document).ready (function() {
         if ($('.post-content').attr('post') == "7") {
             $('table:eq(0)').addClass("ascii-values");
             $('table:eq(1)').addClass("escape-sequences");
+        }
+        if ($('.post-content').attr('post') == "8") {
+            $('table').addClass("operators");
         }
     }
 });
