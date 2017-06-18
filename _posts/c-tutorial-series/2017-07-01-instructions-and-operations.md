@@ -261,7 +261,7 @@ These are used to perform bit-level operations which will be discussed in future
 
 An assignment operator is used for assigning a value to a variable. The most common assignment operator is =. All other assignment operators apart from = are used as short-hands to achieve to two tasks simultaneously: perform an arithmetic or bitwise operation and assign the new value to one of the variables. Let's look at the assignment operators available to us in C programming language.
 
-<div class="assignment-operators-container">
+<div class="table-container">
 
 <table class="assignment-operators">
     <tr>

@@ -93,11 +93,20 @@
     text-align: left;
 }
 
+.post-content .table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
 .post-content table {
     margin: 30px auto;
     width: auto;
     max-width: 100%;
     border: 2px solid #333;
+}
+
+.post-content .table-container table {
+    margin: 0 auto;
 }
 
 .post-content table tr td {

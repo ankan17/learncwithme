@@ -14,6 +14,6 @@ link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/solution_basic_i
 5. Write a program which takes the principal amount, rate of interest and number of years and calculates the amount after the entered number of years if the principal amount is compounded quarterly at the entered rate of interest for the entered time.
 6. Write a program to swap or interchange the contents of two integer variables, using a third variable.
 7. Write a program to swap or interchange the contents of two integer variables, without using a third variable.
-8. Write a program to calculate the sum of the series: 1+2+3+4+...+n, where n is entered by the user.
-9. Write a program to calculate the sum of the series: 1+2+4+8+...+2^n, where n is entered by the user.
+8. Write a program to calculate the sum of the series: 1+2+3+4+...+n, where n is entered by the user, without using iteration or recursion.
+9. Write a program to calculate the sum of the series: 1+2+4+8+...+2<sup>n</sup>, where n is entered by the user, without using iteration or recursion.
 10. If the lengths of 3 sides of a triangle are provided as input, write a program to find the three angles of the triangle.

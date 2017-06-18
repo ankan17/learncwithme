@@ -14,7 +14,6 @@ description: > # On this site, I am sharing the tutorials on C
     written by me. The tutorials start from a very beginner level
     and move to advanced topics as we go along.
 baseurl: "https://ankan17.github.io/learncwithme"
-# baseurl: ""
 url: "http://yourdomain.com"
 github_username: ankan17
 

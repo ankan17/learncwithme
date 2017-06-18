@@ -3,7 +3,7 @@ layout: posts
 serial: 5
 title: Numbers Again!
 meta: Octal and Hexadecimal Integers
-description: We continue our journey with number systems and with the introduction of octal and hexa-decimal integers and modifiers, we delve more into more numbers.
+description: We continue our journey with number systems and with the introduction of octal and hexa-decimal integers and modifiers, we delve more into number theory.
 comments: true
 category: c-tutorial-series
 ---

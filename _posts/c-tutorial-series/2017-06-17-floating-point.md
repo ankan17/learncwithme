@@ -125,7 +125,7 @@ IEEE-754 standard reserves some bit patterns for some special numbers which are 
 
     Notice the loss of precision i.e., significant digits. In the smallest normalized number, we have 24 significant digits, whereas in the largest denormalized number there are 23 significant digits and by the time we reach the smallest denormalized number, we are left with only 1 significant digit. But this is a gradual loss. This is desirable. This prevents the sudden loss of precision as well as increases the range.
 
-<div class="denormal-numbers-container">
+<div class="table-container">
 
     <table class="denormal-numbers">
         <tr>
@@ -208,7 +208,7 @@ IEEE-754 standard reserves some bit patterns for some special numbers which are 
 
 We cannot use the short and signed/unsigned modifiers with float. As mentioned earlier, long float is called double and long long float is called long double. The sizes and ranges of these are given in the following table.
 
-<div class="float-modifiers-container">
+<div class="table-container">
 
     <table class="float-modifiers">
         <tr>

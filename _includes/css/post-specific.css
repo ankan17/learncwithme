@@ -96,15 +96,6 @@
     margin-bottom: 20px;
 }
 
-.denormal-numbers-container, .float-modifiers-container {
-    max-width: 100%;
-    overflow-x: auto;
-}
-
-.post-content .denormal-numbers, .post-content .float-modifiers {
-    margin: 0 auto;
-}
-
 .post-content .denormal-numbers tr td {
     font-size: 14px;
     border-right: 1px solid #333;
@@ -182,15 +173,29 @@
     border-right: 1px solid #333;
 }
 
-.post-content .assignment-operators-container {
-    max-width: 100%;
-    overflow-x: auto;
+/* ----------------------------------------------Post 9---------------------------------------------- */
+
+.post-content .associativity tr th {
+    background-color: #e0eeff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
-.post-content .assignment-operators-container .operators {
-    margin: 0 auto;
+.post-content .associativity tr td {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
+.post-content .operators-associativity tr th {
+    background-color: #e0eeff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #333;
+}
+
+.post-content .operators-associativity tr td {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #333;
+}
 
 /* ----------------------------------------------Media Queries---------------------------------------------- */
 
@@ -209,6 +214,14 @@
     }
 
     .post-content .denormal-numbers tr:nth-child(1) td, .post-content .denormal-numbers tr td:nth-child(1) {
+        font-size: 13px;
+    }
+
+    .post-content .associativity tr th {
+        font-size: 15px;
+    }
+
+    .post-content .associativity tr td {
         font-size: 13px;
     }
 }
