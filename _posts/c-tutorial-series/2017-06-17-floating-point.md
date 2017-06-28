@@ -2,13 +2,13 @@
 layout: posts
 serial: 6
 title: Floating Point
-meta: Real numbers and the IEE-754 Standard
+meta: Real numbers and the IEEE-754 Standard
 description: Done with integers, we'll now dive deep into floating-point data type (a.k.a real numbers). This one discusses floating-point numbers, their binary form and their implementation (the IEE-754 Standard).
 comments: true
 category: c-tutorial-series
 ---
 
-We covered the whole of integers but integers are not the only numbers that we need to store in a computer. There are real numbers with decimal points (also called radix point). They are called floating-point numbers in C (or any other programming language for that matter), for reasons explained a bit later. These floating point numbers can be written in 2 ways in C – Fractional form or Exponential form. Let’s first learn how to write floating point numbers in these two forms.
+We covered the whole of integers but integers are not the only numbers that we need to store in a computer. There are real numbers with decimal points (also called radix point). They are called floating-point numbers in C (or any other programming language for that matter), for reasons explained a bit later. These floating point numbers can be written in 2 ways in C – **Fractional form** or **Exponential form**. Let’s first learn how to write floating point numbers in these two forms.
 
 
 ### Fractional form
@@ -204,7 +204,7 @@ IEEE-754 standard reserves some bit patterns for some special numbers which are 
 	<span class="indented">**Biased exponent:** All 1 bits</span>  
 	<span class="indented">**Mantissa:** Anything except all 0 bits</span>  
 
-##### Modifiers with floating-point numbers
+### Modifiers with floating-point numbers
 
 We cannot use the short and signed/unsigned modifiers with float. As mentioned earlier, long float is called double and long long float is called long double. The sizes and ranges of these are given in the following table.
 

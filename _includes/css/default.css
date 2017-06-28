@@ -1,5 +1,4 @@
 html {
-    position: relative;
     min-height: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -93,11 +92,11 @@ body {
 
 .footer .left a {
     font-size: 45px;
-    color: #262626;
+    color: #556c99;
 }
 
 .footer .left a:hover {
-    color: #444;
+    color: #6980aa;
     text-decoration: none;
     cursor: pointer;
 }
@@ -260,4 +259,5 @@ body {
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
     }
+
 }

@@ -5,6 +5,7 @@ sub-category: code-like-pro
 serial: 1
 title: Basic Input Output
 link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/solution_basic_input_output.pdf
+comments: true
 ---
 
 1. Risabh's basic salary is given as input through the keyboard. His dearness allowance is 25% of basic salary, house rent allowance is 15% of basic salary and provident fund is 7.5% of basic salary. Write a program to calculate his gross salary.

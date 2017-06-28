@@ -55,6 +55,8 @@ If you run the above program, the output you’ll see will be:
 
 This shows that characters and their ASCII values can be used interchangeably. Let’s try to explore this data type a bit more.
 
+### Characteristics of the character data type
+
 + **What happens when you try to store two or 3 characters into a char data type?** Do we get an error? Or do we get away with it? If we get away, what value does the variable store? Since it can store only 1 value, which value does it store?
 
     The answer is we can in fact try to assign say ‘65’ to a character variable without getting any error. We get two warnings though. The first one says we are trying to store multiple characters into a character type variable. The second one says that the compiler is encountering an overflow. It means we are trying to store some value in a variable, which is more than it can store. Indeed we are trying to store 16 bits of value into an 8-bit variable. So, it cuts off 8 bits from the right and stores the rightmost 8 bits as its value. Hence, only ‘5’ gets stored in this case.

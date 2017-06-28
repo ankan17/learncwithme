@@ -77,17 +77,17 @@ header .move-down:hover {
     right: 50px;
 }
 
-.affix-top {
+#navbar-sticky.affix-top {
     position: absolute;
     top: 60px;
 }
 
-.affix-bottom {
+#navbar-sticky.affix-bottom {
     position: absolute;
     top: 60px;
 }
 
-.affix {
+#navbar-sticky.affix {
     top: 120px;
 }
 
@@ -191,6 +191,21 @@ header .move-down:hover {
 #recent .heading {
 	font-size: 23px;
 	margin: 40px 50px 0 20px;
+}
+
+#recent .notice {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+#recent .notice p {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: justify;
+}
+
+#recent .notice p strong {
+    font-size: 20px;
 }
 
 #recent .post-list {

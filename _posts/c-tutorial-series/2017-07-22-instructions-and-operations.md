@@ -75,9 +75,6 @@ Some essential properties of type declaration instruction is being illustrated b
 
 Though we are calling this category of instructions as arithmetic instructions, though in a broad sense, we can call this as operational instructions because we’ll be performing operations in this category of instructions, which are not only arithmetic in nature. **An operation consists of operands and operators. An operand is that entity on which the operation is performed.** These are variables or constants. We have already learnt about them. On the other hand, **operators are those entities using which the operation is performed.** Let’s try to learn about them.
 
-
-### Types of operators
-
 C programming language supports various types of operators to perform various operations. For better understanding of these operators, these can be categorized as under.
 
 + **Arithmetic Operators**
@@ -88,7 +85,7 @@ C programming language supports various types of operators to perform various op
 + **Miscellaneous Operators**
 
 
-#### 1. Arithmetic Operators
+#### Arithmetic Operators
 
 An arithmetic operator performs mathematical operations such as addition, subtraction and multiplication on numerical values (constants and variables). They may be unary (operating on one operand) or binary (operating on two operands). Following are the arithmetic operators that are available to us in C programming language.
 
@@ -218,7 +215,7 @@ Though an arithmetic instruction looks harmless enough, yet one can commit very 
     This is because here the value of i is first used in the printf() statement and then incremented. If we again try to print the value of i, we’ll get 6 because it has been incremented by 1 thereafter.
 
 
-#### 2. Relational Operators
+#### Relational Operators
 
 Relational operators are used to relate two values (variables or constants). If the relationship is true, it returns 1 and if it is false, it returns 0. They are mainly used in decision making. The relational operators that are available to us in C programming language are being mentioned in the following table.
 
@@ -232,7 +229,7 @@ Relational operators are used to relate two values (variables or constants). If 
 | >=       | Greater than or equals to | 5 >= 3 returns 1 |
 
 
-#### 3. Logical Operators
+#### Logical Operators
 
 Logical operators are used by computers to make decisions. Any expression containing logical operator usually returns 0 or 1, depending upon whether the result evaluates to false or true respectively. Following are the logical operators in C programming language.
 
@@ -243,7 +240,7 @@ Logical operators are used by computers to make decisions. Any expression contai
 | ! or Logical NOT    | Negates the operand, meaning yields false <br> if operand is true, true otherwise | If a = 5, then !(a==5) yields 0 (False)                           |
 
 
-#### 4. Bitwise Operators
+#### Bitwise Operators
 
 These are used to perform bit-level operations which will be discussed in future. Learning about bitwise operators are not required as of now. The bitwise operators available in C programming language are being listed here.
 
@@ -257,7 +254,7 @@ These are used to perform bit-level operations which will be discussed in future
 | >>       | RIGHT SHIFT                 |
 
 
-#### 5. Assignment Operators
+#### Assignment Operators
 
 An assignment operator is used for assigning a value to a variable. The most common assignment operator is =. All other assignment operators apart from = are used as short-hands to achieve to two tasks simultaneously: perform an arithmetic or bitwise operation and assign the new value to one of the variables. Let's look at the assignment operators available to us in C programming language.
 
@@ -325,7 +322,7 @@ An assignment operator is used for assigning a value to a variable. The most com
 </div>
 
 
-#### 6. Miscellaneous Operators
+#### Miscellaneous Operators
 
 There are several other operators barring the ones discussed above which can be collectively grouped under miscellaneous. We have already seen some of them. We’ll see others as we move forward with our programming. Let us see a few common miscellaneous operators we have seen till now.
 

@@ -40,7 +40,7 @@ In the first assignment, what happens is this: we get 3.142857 on the right hand
 There are two types of type conversions in C. Let’s discuss both of them.
 
 
-#### 1. Implicit type conversion
+#### Implicit type conversion
 
 When the type conversion is done by the compiler on its own, it is called implicit type conversion. The compiler converts all operands into the data type of the largest operand among the ones involved in the evaluation. The sequence of rules that are applied while evaluating expressions are given below:
 
@@ -65,7 +65,7 @@ Here, in the above operation, some operands are integers whereas some are real n
 It is important to remember that conversion of float to int causes truncation of fractional part, conversion of double to float causes rounding of digits and the conversion of long int to int causes dropping of excess higher order bits.
 
 
-#### 2. Explicit type conversion or typecasting
+#### Explicit type conversion or typecasting
 
 When the programmer explicitly does the type conversion, it is said to be explicit type conversion or typecasting. We’ll discuss typecasting with reference to a sample problem.
 

@@ -16,7 +16,7 @@ If I recall correctly, we are due with octal and hexa-decimal integers and float
 + In C, we can write octal numbers by writing a 0 before the number. For example: 023 means (23)8 to the compiler.
 + How are they stored in memory? In the same way decimal numbers are. They are converted into equivalent binary numbers and then stored. Let’s see how to do that. We’ll learn two methods. The long one and then of course, there is a short one.
 
-##### Octal to binary via decimal
+#### Octal to binary via decimal
 
 To convert an octal number into decimal, we use the same method we used to convert binary numbers to decimal numbers but we use 8 instead of 2 since octal is base 8. Then we’ll convert the decimal number into binary and we know how to do that.
 
@@ -24,7 +24,7 @@ Let’s take an example of (456)<sub>8</sub>.
 
 ![image-5-1]({{ site.baseurl }}/images/posts/{{ page.serial }}/1_Octal_To_Binary_Via_Decimal.png)
 
-##### Octal to binary directly
+#### Octal to binary directly
 
 Take each digit of octal number and use three binary digits to represent each digit. Sounds confusing? Perhaps an example will make it clear.
 
@@ -32,13 +32,13 @@ Take each digit of octal number and use three binary digits to represent each di
 
 Looking at the previous result it is evident that this procedure also yields the correct result. Now let’s try to do the reverse conversion.
 
-##### Binary to octal via decimal
+#### Binary to octal via decimal
 
 We already know how to convert a binary number into decimal form. To get the octal number from its equivalent decimal form, we just follow the procedure we use to get binary number from decimal numbers. Following graphic illustrates the whole method.
 
 ![image-5-3]({{ site.baseurl }}/images/posts/{{ page.serial }}/3_Binary_To_Octal_Via_Decimal.png)
 
-##### Binary to octal directly
+#### Binary to octal directly
 
 We’ll do the reverse of the process we did for converting octal to binary directly, that is, take three digits at a time from the right and use them to represent one octal digit on the right till all digits are exhausted. The process will become clear enough once we take an example.
 
@@ -53,7 +53,7 @@ I think we are quite done with octal integers. Let’s move on to hexa-decimal i
 + In C, we can write hexa-decimal numbers by writing a 0x before the number. For example: 0x47A means (47A)16 to the compiler.
 + By now you would have guessed that hexa-decimal numbers are also converted into equivalent binary numbers and then stored and also what are we going to do next. So let’s jump right into the act and learn the two methods to convert hexa-decimal numbers into binary form and also its reverse counterpart.
 
-##### Hexa-decimal to binary
+#### Hexa-decimal to binary
 
 The process of conversion remains the same for the longer method, we just need to make a small change and as you can probably guess the change is that we need to use 16 in place of 8 as the number is in base 16. In the short-cut method however, the change is that 1 hexa-decimal digit converts to 4 bits of binary in place of 3 in octal.
 
@@ -61,7 +61,7 @@ Let’s take an example of (58C)<sub>16</sub>. The following illustration gives 
 
 ![image-5-5]({{ site.baseurl }}/images/posts/{{ page.serial }}/5_Hexadecimal_To_Binary.png)
 
-##### Binary to hexa-decimal
+#### Binary to hexa-decimal
 
 I would urge you to try the reverse process on your own and then see the following illustration which explains both the long and the short method.
 

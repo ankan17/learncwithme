@@ -5,8 +5,11 @@ $(document).ready (function() {
     provideAge();
     scrollToSection();
     applyStickyNavbar();
+    applyReferenceNavbar();
+    scrollToHeading();
     provideCommentBoxSize();
     showAnswer();
+
     if ($('.post-content')) {
         if ('img') {
             var length = $('img')['length'];
@@ -115,7 +118,17 @@ function scrollToSection() {
         $('html body').animate({
             'scrollTop' : $(target).offset().top
         }, 600);
-        console.log ($(window).scrollTop(), $(target).offset().top);
+    });
+}
+
+function scrollToHeading() {
+    $('#reference-nav li a').click (function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        console.log(target);
+        $('html body').animate({
+            'scrollTop' : $(target).offset().top-70
+        }, 400);
     });
 }
 
@@ -124,13 +137,44 @@ function applyStickyNavbar() {
         target: ".navbar-sticky",
         offset: 50
     });
-
     $("#navbar-sticky").affix ({
         offset: {
             top : parseInt($("header").css('height')),
             bottom : parseInt($('#contact').css('height'))+200
         }
     });
+}
+
+function applyReferenceNavbar() {
+    $("#reference-nav").affix ({
+        offset: {
+            top : 95,
+            bottom : parseInt($('#contact').css('height'))+405
+        }
+    });
+    provideHeadingLinks('h3');
+    provideHeadingLinks('h4');
+    var len = $('.post-content .heading').length, i=0, heading_element;
+    while (i < len) {
+        heading_element = $('.heading').eq(i);
+        $('#reference-nav').append("<li><a>" + heading_element.html() + "</a></li>");
+        $('#reference-nav li').eq(i).attr({
+            'class' : 'level' + $(heading_element).attr('class').split(" ")[1]
+        });
+        $('#reference-nav li a').eq(i).attr({
+            'href': "#" + heading_element.attr('id')
+        });
+        i++;
+    }
+}
+
+function provideHeadingLinks(tag) {
+    var len, heading_element, i=0;
+    var len = $('.post-content .row .col-xs-12').children(tag).length;
+    while (i < len) {
+        $('.post-content .row .col-xs-12 ' + tag).eq(i).addClass('heading ' + String(tag.slice(1) - 2));
+        i++;
+    }
 }
 
 function provideCommentBoxSize() {
