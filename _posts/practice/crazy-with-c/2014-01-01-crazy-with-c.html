@@ -11,7 +11,7 @@ comments: true
 {% highlight c %}
 #include <stdio.h>
 
-int main () {
+int main() {
     int a, b;
     a = -3- -25;
     b = -3- -(-3);
@@ -34,9 +34,9 @@ int main () {
 {% highlight c %}
 #include <stdio.h>
 
-int main () {
+int main() {
     int i = 5;
-    printf ("%d", (++i,i,i--));
+    printf("%d", (++i,i,i--));
     return 0;
 }
 {% endhighlight %}
@@ -55,8 +55,8 @@ int main () {
 {% highlight c %}
 #include <stdio.h>
 
-int main () {
-    printf ("%d", '5');
+int main() {
+    printf("%d", '5');
     return 0;
 }
 {% endhighlight %}
@@ -75,9 +75,9 @@ int main () {
 {% highlight c %}
 #include <stdio.h>
 
-int main () {
-    printf ("%o %x ", 89, 179);
-    printf ("%d %d", 076, 0x78);
+int main() {
+    printf("%o %x ", 89, 179);
+    printf("%d %d", 076, 0x78);
    return 0;
 }
 {% endhighlight %}
@@ -96,9 +96,9 @@ int main () {
 {% highlight c %}
 #include <stdio.h>
 
-int main () {
+int main() {
     char c = 11*5.1/10.8 + 25.1*3;
-    printf ("%c", c);
+    printf("%c", c);
     return 0;
 }
 {% endhighlight %}
@@ -117,10 +117,10 @@ int main () {
 {% highlight c %}
 #include <stdio.h>
 
-int main () {
+int main() {
     char c = 'c';
-    printf ("%d ", sizeof ('c') == sizeof (char));
-    printf ("%d", sizeof (c) == sizeof (int));
+    printf("%d ", sizeof ('c') == sizeof (char));
+    printf("%d", sizeof (c) == sizeof (int));
     return 0;
 }
 {% endhighlight %}
@@ -139,8 +139,8 @@ int main () {
 {% highlight c %}
 #include <stdio.h>
 
-int main () {
-    printf (" %d\n", printf ("printf (\"%%d\", 23);"));
+int main() {
+    printf(" %d\n", printf ("printf (\"%%d\", 23);"));
     return 0;
 }
 {% endhighlight %}
@@ -159,12 +159,12 @@ int main () {
 {% highlight c %}
 #include <stdio.h>
 
-int main () {
+int main() {
     int i = 5;
-    printf ("%d ", i == 5||0);
-    printf ("%d ", i == 5&&1);
-    printf ("%d ", i = 5||0);
-    printf ("%d ", i = 5&&0);
+    printf("%d ", i == 5||0);
+    printf("%d ", i == 5&&1);
+    printf("%d ", i = 5||0);
+    printf("%d ", i = 5&&0);
     return 0;
 }
 {% endhighlight %}
@@ -183,10 +183,10 @@ int main () {
 {% highlight c %}
 #include <stdio.h>
 
-int main () {
-    printf ("%d ", printf (""));
-    printf ("%d ", printf ("\0"));
-    printf ("%d", printf ("%c", '\0'));
+int main() {
+    printf("%d ", printf (""));
+    printf("%d ", printf ("\0"));
+    printf("%d", printf ("%c", '\0'));
     return 0;
 }
 {% endhighlight %}
@@ -205,9 +205,9 @@ int main () {
 {% highlight c %}
 #include <stdio.h>
 
-int main () {
+int main() {
     unsigned char c = -64;
-    printf ("%u", c);
+    printf("%u", c);
     return 0;
 }
 {% endhighlight %}
