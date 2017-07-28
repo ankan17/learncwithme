@@ -4,7 +4,7 @@ category: practice
 sub-category: code-like-pro
 serial: 1
 title: Basic Input Output
-link: https://github.com/ankan17/learncwithme/raw/gh-pages/pdfs/solution_basic_input_output.pdf
+link: https://github.com/ankan17/code-like-pro/tree/master/basic-input-output
 comments: true
 ---
 

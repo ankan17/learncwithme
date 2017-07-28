@@ -275,6 +275,15 @@ header .move-down:hover {
         padding-top: 20px;
     }
 
+    #recent .notice p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    #recent .notice p strong {
+        font-size: 17px;
+    }
+
     #recent .heading {
         margin: 0;
         font-size: 19px;

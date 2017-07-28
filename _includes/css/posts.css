@@ -78,6 +78,11 @@
     white-space: pre;
 }
 
+.post-content code {
+    font-size: 0.85em;
+    letter-spacing: -1px;
+}
+
 .post-content .col-xs-12 {
     margin-bottom: 15px;
 }

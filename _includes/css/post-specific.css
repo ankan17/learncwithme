@@ -197,6 +197,25 @@
     border-right: 1px solid #333;
 }
 
+/* ----------------------------------------------Post 10---------------------------------------------- */
+
+.post-content .format-specifiers tr th {
+    background-color: #e0eeff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.post-content .format-specifiers tr td:nth-child(1) {
+    background-color: #e0eeff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.post-content .format-specifiers tr td {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
 /* ----------------------------------------------Media Queries---------------------------------------------- */
 
 @media only screen and (max-width: 768px) {

@@ -85,7 +85,7 @@ int main () {
 	/* Approach 1: Store at least one of the inputs as float so that the result is a float */
 	float a = i;
 	float res = a/j;
-	printf ("The result of division is %f", res);
+	printf("The result of division is %f", res);
 
 	return 0;
 }
