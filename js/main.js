@@ -98,7 +98,7 @@ function clickScrollDown() {
         e.preventDefault();
         var pos = $('header').offset().top + parseInt($('header').css('height'));
         console.log(pos);
-        $('html body').animate ({
+        $('html, body').animate ({
             'scrollTop' : pos
         }, 600);
     });
@@ -115,7 +115,7 @@ function scrollToSection() {
     $('a[href^="#"]').click (function(e) {
         e.preventDefault();
         var target = $(this).attr('href');
-        $('html body').animate({
+        $('html, body').animate({
             'scrollTop' : $(target).offset().top
         }, 600);
     });
@@ -126,7 +126,7 @@ function scrollToHeading() {
         e.preventDefault();
         var target = $(this).attr('href');
         console.log(target);
-        $('html body').animate({
+        $('html, body').animate({
             'scrollTop' : $(target).offset().top-70
         }, 400);
     });

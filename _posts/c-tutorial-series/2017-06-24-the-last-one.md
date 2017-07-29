@@ -39,11 +39,11 @@ Since characters are stored as integers, we can use characters and their ASCII v
 ```c
 #include <stdio.h>
 
-int main () {
+int main() {
   char c = 65;
   char d = '4';
-  printf ("%c\n", c);
-  printf ("%d\n", d);
+  printf("%c\n", c);
+  printf("%d\n", d);
   return 0;
 }
 ```
@@ -63,7 +63,7 @@ This shows that characters and their ASCII values can be used interchangeably. L
 
 + **What if we try to do something like char c = 297?** Since the size of a character type variable is only 1 byte or 8 bits, its range is from -128 to 127. What happens in this case? Again we get an overflow warning. To see what happens exactly, let’s do a little binary conversion. Decimal 297 is 100101001. This has 9 bits. But we only have 8 bits at our disposal. So, cut off 8 bits from the right and store it into the variable. What do we get? 41. This gets stored instead. What do you think will be stored if you try something like **char c = 387?**
 
-+ Try to print **sizeof(‘A’)** on your compiler. What do you think will be the output? 1, right? Wrong. Characters are stored in memory as integers, as I have already told and as such, it will be treated as one. C compilers tend to want every integer to be stored in an int unless told otherwise, so **sizeof(‘A’)** will probably be **sizeof(int)**.
++ Try to print `sizeof(‘A’)` on your compiler. What do you think will be the output? 1, right? Wrong. Characters are stored in memory as integers, as I have already told and as such, it will be treated as one. C compilers tend to want every integer to be stored in an int unless told otherwise, so `sizeof(‘A’)` will probably be `sizeof(int)`.
 
 + We can only use the signed and unsigned modifiers with the character data type.
 
