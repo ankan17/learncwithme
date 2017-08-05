@@ -78,6 +78,10 @@
     white-space: pre;
 }
 
+.post-content pre code.highlighter-rouge {
+    color: #c7254e;
+}
+
 .post-content code {
     font-size: 0.85em;
     letter-spacing: -1px;
@@ -90,7 +94,7 @@
 .post-content pre.output {
     padding: 10px;
     margin: 15px;
-    width: 350px;
+    width: 400px;
     max-width: 100%;
     font-size: 14px;
 }
