@@ -214,6 +214,38 @@
     max-width: 100%;
 }
 
+#code-like-pro .table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 30px auto;
+}
+
+#code-like-pro .table-container table {
+    margin: 0 auto;
+}
+
+#code-like-pro table {
+    border: 2px solid #333;
+    width: auto;
+    max-width: 100%;
+}
+
+#code-like-pro table tr td {
+    border-right: 1px solid #bbb;
+    padding: 6px 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#code-like-pro table tr th {
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #999;
+    background-color: #e0eeff;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 17px;
+}
+
 @media only screen and (max-width: 768px) {
 
     #practice {
@@ -363,5 +395,23 @@
     #code-like-pro .solution {
         font-size: 26px;
         margin: 20px auto;
+    }
+
+    #code-like-pro .table-container {
+        margin: 15px auto;
+    }
+
+    #code-like-pro table {
+        margin: 15px auto;
+    }
+
+    #code-like-pro table tr td {
+        padding: 4px;
+        font-size: 13px;
+    }
+
+    #code-like-pro table tr th {
+        padding: 5px 8px;
+        font-size: 15px;
     }
 }

@@ -8,7 +8,7 @@ comments: true
 category: c-tutorial-series
 ---
 
-Till now, we have created programs in which every line is **sequentially executed** one after the other. But that will not always be the case with all our programs that we’ll need to create. There will be times when we will require that one set of statements be executed only if a certain condition is fulfilled and an entirely different set of statements be executed otherwise or if the condition is not fulfilled we may not want to do anything. This is the premise of this tutorial. There must be something by which we can achieve this. And not so surprisingly, there is. This is where **Decision Control Instructions** come into play. Decision control instructions are those set of instructions that allow us to make some sort of decisions in our program and do things accordingly.
+Till now, we have created programs in which every line is **sequentially executed** one after the other. But that will not always be the case with all our programs that we'll need to create. There will be times when we will require that one set of statements be executed only if a certain condition is fulfilled and an entirely different set of statements be executed otherwise or if the condition is not fulfilled we may not want to do anything. This is the premise of this tutorial. There must be something by which we can achieve this. And not so surprisingly, there is. This is where **Decision Control Instructions** come into play. Decision control instructions are those set of instructions that allow us to make some sort of decisions in our program and do things accordingly.
 
 A decision control instruction in C can be implemented using any of the following:
 
@@ -30,7 +30,7 @@ if (<code class="highlighter-rouge">this condition is true</code>) {
 
 A few things need to be noted here.
 
-+ How would you define a condition to the computer? Well, let’s try to think about it from the very basic level. A condition is something that evaluates to either true or false. In computer’s world, we have 0 representing falsity and any non-zero number representing truth. Usually we would use the **relational operators** to express any condition. The relational operators let us check equality or inequality of two items and also if one is greater or lesser than the other.
++ How would you define a condition to the computer? Well, let's try to think about it from the very basic level. A condition is something that evaluates to either true or false. In computer's world, we have 0 representing falsity and any non-zero number representing truth. Usually we would use the **relational operators** to express any condition. The relational operators let us check equality or inequality of two items and also if one is greater or lesser than the other.
 
 + The condition gets evaluated to 0 if false and 1 if true. If the evaluation results in 1, the statements within the pair of braces that follow get executed. But if the result is 0, the program skips past it.
 
@@ -55,7 +55,7 @@ A few things need to be noted here.
 
 + Always use the parenthesis to enclose the condition statement and do not enclose the condition within quotes because that always gets evaluated to true, no matter what the condition is.
 
-+ Enough about the condition part, let’s now talk about what happens when the condition gets fulfilled. What happens is that whatever is written within the pair of braces following it gets executed. This can be any valid C instruction, but not type declaration instruction.
++ Enough about the condition part, let's now talk about what happens when the condition gets fulfilled. What happens is that whatever is written within the pair of braces following it gets executed. This can be any valid C instruction, but not type declaration instruction.
 
 + What happens when you miss the braces? Well, being the obedient language C is, it does not throw any errors on you. But in that case, only the first line is considered as part of the if statement. The other instructions that follow, get executed whether or not the condition gets fulfilled. For example, check out the difference between the outputs of the following code snippets.
 
@@ -95,7 +95,7 @@ A few things need to be noted here.
     do this; //See that this line is executed regardless the result of the if statement
     ```
 
-Let’s see a silly program that checks if a non-zero number is positive or negative.
+Let's see a silly program that checks if a non-zero number is positive or negative.
 
 ```c
 #include <stdio.h>
@@ -140,7 +140,7 @@ Again we need to keep a few things in mind about the if-else statement.
 
 + There can be an if block without a corresponding else but not vice-versa. This will throw a syntax error.
 
-Let’s re-write the above program using if-else this time.
+Let's re-write the above program using if-else this time.
 
 ```c
 #include <stdio.h>
@@ -162,9 +162,9 @@ int main() {
 
 This is more efficient and better-written than the previous version.
 
-### Nested if-else’s
+### Nested if-else's
 
-We can write an entire if-else construct within the if block or the else block. This is called ‘**nesting of if’s**’. This can be seen in the following piece of code, in which we do a brief variation of the program we have created before.
+We can write an entire if-else construct within the if block or the else block. This is called '**nesting of if's**'. This can be seen in the following piece of code, in which we do a brief variation of the program we have created before.
 
 ```c
 #include <stdio.h>
@@ -187,9 +187,9 @@ int main() {
 }
 ```
 
-A similar nesting can be done in the else block also. We can also nest another if-else construct within the nested if-else. There is no limit on how deeply the if’s and else’s can be nested.
+A similar nesting can be done in the else block also. We can also nest another if-else construct within the nested if-else. There is no limit on how deeply the if's and else's can be nested.
 
-Let’s look at a program which asks the user for an input of marks of some subject and prints his division according to some predefined conditions. We’ll use nested if-else approach.
+Let's look at a program which asks the user for an input of marks of some subject and prints his division according to some predefined conditions. We'll use nested if-else approach.
 
 ```c
 #include <stdio.h>
@@ -234,7 +234,7 @@ As we have seen previously, there are three logical operators in C, viz., **AND*
 
 + **NOT** is used to negate any condition. For example: (!(5<3)) is true but (!(4==2+2)) is false.
 
-Let’s re-write the above program using logical operators.
+Let's re-write the above program using logical operators.
 
 ```c
 #include <stdio.h>
@@ -257,7 +257,7 @@ int main() {
 }
 ```
 
-See that our problems have been solved. No unnecessary indentation, no need to carefully match the if-else ladder and no need to match corresponding opening and closing braces. But we have run into a new problem. The execution time of the program has increased because even if the first condition turns out to be true, all the conditions are checked. We’ll resolve this problem using the else if clause.
+See that our problems have been solved. No unnecessary indentation, no need to carefully match the if-else ladder and no need to match corresponding opening and closing braces. But we have run into a new problem. The execution time of the program has increased because even if the first condition turns out to be true, all the conditions are checked. We'll resolve this problem using the else if clause.
 
 ### The *else if* clause
 
@@ -325,26 +325,26 @@ Both the codes mean the same thing. Now you can easily understand what the above
 
     ```c
     char c;
-    c = ‘c’;
-    printf(“%c”, (c == ‘c’ ? ‘A’ : ‘a’));
+    c = 'c';
+    printf("%c", (c == 'c' ? 'A' : 'a'));
     ```
 
 + Conditional operators can also be nested. For example, look at the following code snippet which is designed to find the maximum of three numbers.
 
     ```c
     int max, a, b, c;
-    scanf(“%d %d %d”, &a, &b, &c);
+    scanf("%d %d %d", &a, &b, &c);
     max = (a > b ? (a > c ? a : c) : (b > c ? b : c);
     ```
 
-+ It so happens that you don’t wanna get into the hierarchy problem of different operators. To avoid getting into troubles, it is better to use parenthesis with each expression of the conditional operator. For example, look at the following piece of code.
++ It so happens that you don't wanna get into the hierarchy problem of different operators. To avoid getting into troubles, it is better to use parenthesis with each expression of the conditional operator. For example, look at the following piece of code.
 
     ```c
     int x, a=3, b=2;
     a > b ? x=a : x=b;
     ```
 
-    Well, this can cause troubles for you. You’ll get an error if you run this code. The error says ‘Lvalue required’. This means an expression is being assigned the value of a variable. Didn’t understand? Let me try once more. The above statement would be interpreted by the compiler as **(a>b?x=a:x)=b**. See that on the left-hand side we have an expression whereas on the right-hand side we have a variable. This happens because the conditional operator has higher precedence than the assignment operator and hence the compiler tries to evaluate the conditional statement first and in doing so, creates are error out of an innocent-looking instruction. Hence, we might wanna correct it as
+    Well, this can cause troubles for you. You'll get an error if you run this code. The error says 'Lvalue required'. This means an expression is being assigned the value of a variable. Didn't understand? Let me try once more. The above statement would be interpreted by the compiler as **(a>b?x=a:x)=b**. See that on the left-hand side we have an expression whereas on the right-hand side we have a variable. This happens because the conditional operator has higher precedence than the assignment operator and hence the compiler tries to evaluate the conditional statement first and in doing so, creates are error out of an innocent-looking instruction. Hence, we might wanna correct it as
 
     ```c
     (a>b) ? (x=a) : (x=b);
@@ -352,6 +352,6 @@ Both the codes mean the same thing. Now you can easily understand what the above
 
     Even **a>b?x=a:(x=b)** works just fine, but the above one looks more clean and precise. So, why not use parenthesis if it helps to increase the code readability!
 
-+ One limitation that the conditional operator offers is that we can use only one instruction as the **if-block** and **else-block** of the equivalent if-else expression. In real life programming situations, we’ll encounter only few situations where we’ll need only one instruction for the if or the else part. Nevertheless, if we do encounter such situations, conditional operator provides a quite nice shorthand way of writing things.
++ One limitation that the conditional operator offers is that we can use only one instruction as the **if-block** and **else-block** of the equivalent if-else expression. In real life programming situations, we'll encounter only few situations where we'll need only one instruction for the if or the else part. Nevertheless, if we do encounter such situations, conditional operator provides a quite nice shorthand way of writing things.
 
-I think we have covered everything we’d like to learn about decision control instructions. We’d need to strengthen our concepts about decision control by doing some programming exercises and we’ll surely do that before moving on to loop control instructions.
+I think we have covered everything we'd like to learn about decision control instructions. We'd need to strengthen our concepts about decision control by doing some programming exercises and we'll surely do that before moving on to loop control instructions.

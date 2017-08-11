@@ -2,7 +2,7 @@
 layout: code-like-pro
 category: practice
 sub-category: code-like-pro
-serial: 2
+serial: 3
 title: Number Theory I
 link: https://github.com/ankan17/code-like-pro/tree/master/number-theory-I
 comments: true
