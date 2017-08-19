@@ -216,6 +216,23 @@
     border-right: 1px solid #ccc;
 }
 
+/* ----------------------------------------------Post 12----------------------------------------------- */
+
+.image-12-1 {
+    width: 380px;
+    margin: 30px auto;
+}
+
+.image-12-2 {
+    width: 300px;
+    margin: 35px auto;
+}
+
+.image-12-3 {
+    width: 380px;
+    margin: 35px auto;
+}
+
 /* ----------------------------------------------Media Queries---------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
