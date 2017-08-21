@@ -35,7 +35,7 @@ Now we are only left with 0.625. For the portion after decimal, we follow the fo
 
 The following graphic illustrates this method with an example of the task at our hand i.e., 0.625.
 
-![image-6-1]({{ site.baseurl }}/images/posts/{{ page.serial }}/1_Binary_of_Fractional_Number.png)
+![image-6-1]({{ site.baseurl }}/images/posts/6_1_Binary_of_Fractional_Number.png)
 
 This can be verified if we try to see that
 
@@ -106,7 +106,7 @@ Here the first bit is 0, which is the sign bit signifying positive number. The n
 
 Let’s consider two binary real numbers: 1.101 x 210 and 1.101 x 2-10. Let’s see what happens when we store the exponents in biased exponent form and in two’s complement form.
 
-![image-6-2]({{ site.baseurl }}/images/posts/{{ page.serial }}/2_Why_Biasing.png)
+![image-6-2]({{ site.baseurl }}/images/posts/6_2_Why_Biasing.png)
 
 Notice that in biased exponent form, we can lexicographically compare the two numbers (i.e., compare bit-by-bit) and the number with the negative exponent looks smaller but in two’s complement form see that lexicographic comparison has no meaning since the negative exponent looks bigger. For this reason, IEEE-754 specifies that the exponent be biased.
 

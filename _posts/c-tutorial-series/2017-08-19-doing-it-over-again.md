@@ -3,12 +3,16 @@ layout: posts
 serial: 12
 title: Doing It Over Again!
 meta: Getting started with Loop Control Instruction in C
-description: From Decision Control Statements, we move on to a more complex programming construct i.e. loops! Explore all about Loop Control Instructions, the <i>for</i> loop, <i>break</i> and <i>continue</i> statements and much more in this tutorial!
+description: >-
+  From Decision Control Statements, we move on to a more complex programming
+  construct i.e. loops! Explore all about Loop Control Instructions, the
+  <i>for</i> loop, <i>break</i> and <i>continue</i> statements and much more in
+  this tutorial!
 comments: true
 category: c-tutorial-series
 ---
 
-We have covered sequential and decision control instructions so far. But are these enough? Let’s take up a situation. Suppose you were to write a program where you want to print all the numbers from 1 to 10. Sounds easy enough, right? Write 10 `printf()` statements and we are done. Or better yet, write all the numbers in the same `printf()` statement, separated by newline feed. The code can be given as follows:
+We have covered Sequential and Decision Control Instructions so far. But are these enough? Let’s take up a situation. Suppose you were to write a program where you want to print all the numbers from 1 to 10. Sounds easy enough, right? Write 10 `printf()` statements and we are done. Or better yet, write all the numbers in the same `printf()` statement, separated by newline feed. The code can be given as follows:
 
 ```c
 /* Method 1 */
@@ -88,11 +92,11 @@ int main() {
 Simple, precise and elegant! It solves all our problems. But how exactly does it run? We’ll try to understand that in a while. We can see that *i=1* is the **initialisation** statement, *i<=10* is the **condition** statement and *i++* is the **updation** statement.
 The loop begins at the initialisation statement. At first, i is assigned the value 1. Then the condition i<=10 is checked. Since it is true, the control enters the loop body and the value 1 is printed. Then the control moves to the updation part and the value of i is incremented to 2. The condition is checked and the value 2 is printed since the condition is true. This happens till the value of i is 10 and 10 is printed. After printing 10, the value of i becomes 11 and the condition is then checked, which evaluates to false, thus taking the control out of the loop. The whole working of the for loop can be visualized like this.
 
-![image-12-1]({{ site.baseurl }}/images/posts/{{ page.serial }}/1_For_Loop_Explanation.png)
+![image-12-1]({{ site.baseurl }}/images/posts/12_1_For_Loop_Explanation.png)
 
 A flowchart will perhaps better clarify things because it is important to understand the sequence in which the loop works.
 
-![image-12-2]({{ site.baseurl }}/images/posts/{{ page.serial }}/2_For_Loop_Flowchart.png)
+![image-12-2]({{ site.baseurl }}/images/posts/12_2_For_Loop_Flowchart.png)
 
 It is important to note that we can omit any or all of the initialisation, condition and updation statements and place it differently to give rise to different forms of the for loop. But for that we need to know about two keywords, extensively used with loop, the **break** and **continue** statements.
 
@@ -277,7 +281,7 @@ We get the following output for the above program.
 
 I guess some explanation is due now. Let's understand the working of the code. After the declaration of i and j, the compiler encounters the first for loop statement. *i* is initialized to 1, the condition *i<=2* is found to be true and hence, the control moves into the body of the outer loop and the compiler encounters another for loop statement. This time *j* is initialized to 1 and the condition *j<=2* is also found to be true. Now the control moves on to the `printf()` statement and the line *1 + 1 = 2* is printed. Now a question arises that where the control should go next. If you look at the working of the for loop again, you'll find that after the loop body is executed the control goes to updation. But there are two updations: i++ and j++. Which one is to be performed? Or both, maybe? The answer is that only the updation part of the immediately preceding for loop is executed, i.e., j++ and then the condition *j<=2* is checked. After printing the line *1 + 2 = 3*, j becomes 3 and since the condition of the inner for loop does not satisfy anymore, the control comes out of the inner for loop and moves on with the body of the outer for loop. The `printf()` statement on line 7 is executed giving the output *3 - 1 = 2*, since the value of j is 3 now. After being done with the loop body of the outer for loop, i is now incremented to 2 and the inner loop works all over again to generate the remainder of the output. The control reaches to `return 0` when i becomes 3. The whole process can be summarized with the following flowchart.
 
-![image-12-3]({{ site.baseurl }}/images/posts/{{ page.serial }}/3_Nested_Loop_Problem_Flowchart.png)
+![image-12-3]({{ site.baseurl }}/images/posts/12_3_Nested_Loop_Problem_Flowchart.png)
 
 Look at the flowchart. Try to understand it carefully. This will probably clear up things. As is the case with nesting of ifs, nesting of loops can also be done upto any level! It may seem now that nesting of loops is a very tough concept or that it's not very useful, but trust me, once you get the idea of it, it is going to be very easy to understand and implement and it is super useful in many cases. So much so, that there is no other way around it!
 

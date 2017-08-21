@@ -173,7 +173,7 @@ Though an arithmetic instruction looks harmless enough, yet one can commit very 
 + In normal arithmetic, we can form expressions using [] and {}, but these are not allowed in arithmetic expressions in C. Arithmetic expressions in C must only consist of () in place of the [] and {} we use in normal arithmetic expressions. Let us consider the following expression.
 
 
-    ![image-8-1]({{site.baseurl}}/images/posts/{{page.serial}}/1_mathematical_expression.png)
+    ![image-8-1]({{site.baseurl}}/images/posts/8_1_mathematical_expression.png)
 
     Its equivalent C expression would look like **((2*B*Y)/(d+1)-x/(3*(z+y)))**.
 

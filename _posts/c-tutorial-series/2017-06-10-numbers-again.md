@@ -22,13 +22,13 @@ To convert an octal number into decimal, we use the same method we used to conve
 
 Let’s take an example of (456)<sub>8</sub>.
 
-![image-5-1]({{ site.baseurl }}/images/posts/{{ page.serial }}/1_Octal_To_Binary_Via_Decimal.png)
+![image-5-1]({{ site.baseurl }}/images/posts/5_1_Octal_To_Binary_Via_Decimal.png)
 
 #### Octal to binary directly
 
 Take each digit of octal number and use three binary digits to represent each digit. Sounds confusing? Perhaps an example will make it clear.
 
-![image-5-2]({{ site.baseurl }}/images/posts/{{ page.serial }}/2_Octal_To_Binary_Directly.png)
+![image-5-2]({{ site.baseurl }}/images/posts/5_2_Octal_To_Binary_Directly.png)
 
 Looking at the previous result it is evident that this procedure also yields the correct result. Now let’s try to do the reverse conversion.
 
@@ -36,13 +36,13 @@ Looking at the previous result it is evident that this procedure also yields the
 
 We already know how to convert a binary number into decimal form. To get the octal number from its equivalent decimal form, we just follow the procedure we use to get binary number from decimal numbers. Following graphic illustrates the whole method.
 
-![image-5-3]({{ site.baseurl }}/images/posts/{{ page.serial }}/3_Binary_To_Octal_Via_Decimal.png)
+![image-5-3]({{ site.baseurl }}/images/posts/5_3_Binary_To_Octal_Via_Decimal.png)
 
 #### Binary to octal directly
 
 We’ll do the reverse of the process we did for converting octal to binary directly, that is, take three digits at a time from the right and use them to represent one octal digit on the right till all digits are exhausted. The process will become clear enough once we take an example.
 
-![image-5-4]({{ site.baseurl }}/images/posts/{{ page.serial }}/4_Binary_To_Octal_Directly.png)
+![image-5-4]({{ site.baseurl }}/images/posts/5_4_Binary_To_Octal_Directly.png)
 
 I think we are quite done with octal integers. Let’s move on to hexa-decimal integers.
 
@@ -59,13 +59,13 @@ The process of conversion remains the same for the longer method, we just need t
 
 Let’s take an example of (58C)<sub>16</sub>. The following illustration gives a clear insight into both the methods.
 
-![image-5-5]({{ site.baseurl }}/images/posts/{{ page.serial }}/5_Hexadecimal_To_Binary.png)
+![image-5-5]({{ site.baseurl }}/images/posts/5_5_Hexadecimal_To_Binary.png)
 
 #### Binary to hexa-decimal
 
 I would urge you to try the reverse process on your own and then see the following illustration which explains both the long and the short method.
 
-![image-5-6]({{ site.baseurl }}/images/posts/{{ page.serial }}/6_Binary_To_Hexadecimal.png)
+![image-5-6]({{ site.baseurl }}/images/posts/5_6_Binary_To_Hexadecimal.png)
 
 We've have had enough of number conversion. We’ll take up modifiers next and see how these change the properties of the basic integer data type.
 
