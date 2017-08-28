@@ -313,6 +313,20 @@ header .move-down:hover {
         font-size: 13px;
         text-align: left;
     }
+
+    #recent .notice {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    #recent .notice p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    #recent .notice p strong {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width: 1032px) {
