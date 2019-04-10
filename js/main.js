@@ -6,14 +6,13 @@ $(function() {
         $('#sidebar-checkbox').prop('checked', !($('#sidebar-checkbox').is(':checked')));
     });
 
-    jQuery('.content').bind('swiperight swiperightup swiperightdown', function(e) {
-        // console.log("Swipped right");
+    $('.content').bind('swiperight', function(e) {
         if (!($('#sidebar-checkbox').is(':checked'))) {
             $('#sidebar-checkbox').prop('checked', true);
         }
     });
 
-    jQuery('.content').bind('swipeleft swipeleftup swipeleftdown', function(e) {
+    jQuery('.content').bind('swipeleft', function(e) {
         if ($('#sidebar-checkbox').is(':checked')) {
             $('#sidebar-checkbox').prop('checked', false);
         }
@@ -35,8 +34,6 @@ $(function() {
             'scrollTop' : $(target).offset().top - 10
         }, 600);
     });
-
-    console.log($('.post-container').attr('post-serial'));
 
     if ($('.post-container').attr('post-serial') == "3") {
         $('table:eq(0)').addClass("character-set");
