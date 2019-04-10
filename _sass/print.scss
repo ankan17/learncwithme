@@ -1,0 +1,97 @@
+@media print {
+
+    body {
+        margin-top: 10mm;
+    }
+
+    .p-mt-10 {
+        margin-top: 10mm !important;
+    }
+
+    .p-mt-20 {
+        margin-top: 20mm !important;
+    }
+
+    .p-mt-30 {
+        margin-top: 30mm !important;
+    }
+
+    .masthead {
+        display: none;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .comments {
+        display: none;
+    }
+
+    .post-container {
+
+        width: 32rem;
+
+        .post-title {
+            font-size: 2.75rem;
+        }
+
+        .post-meta {
+            font-size: 1rem;
+        }
+
+        .content-date {
+            display: none;
+        }
+
+        .post-content {
+            font-size: 0.7rem;
+            color: rgb(161, 161, 161);
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            h5 {
+                font-size: 0.85rem;
+            }
+
+            p {
+                text-align: justify;
+                margin: 0.75rem 0;
+                font-size: 0.65rem;
+            }
+
+            pre code {
+                font-size: 0.6rem;
+                line-height: 80% !important;
+            }
+
+            pre.output {
+                font-size: 0.6rem;
+            }
+
+            .indented {
+                font-size: 0.65rem;
+            }
+
+            table tr {
+                td {
+                    font-size: 0.6rem;
+                }
+
+                th {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}

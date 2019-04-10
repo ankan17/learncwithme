@@ -1,0 +1,50 @@
+.home.container {
+
+    max-width: 32rem;
+
+    @media (min-width: 52em) {
+        max-width: 42rem;
+    }
+
+    p.text-justify {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    h2.heading {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .post {
+
+        .date {
+            font-size: 0.75rem;
+            display: block;
+            margin-bottom: 0.75rem;
+            color: #737373;
+        }
+
+        .title {
+            color: #2161af;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+
+            &:hover {
+                color: #1a406b;
+                text-decoration: none;
+            }
+
+            .meta {
+                font-size: 1.1rem;
+            }
+        }
+
+        .desc {
+            font-size: 0.95rem;
+            line-height: 1.2rem;
+            margin-top: 1rem;
+            margin-bottom: 0.75rem;
+        }
+    }
+}

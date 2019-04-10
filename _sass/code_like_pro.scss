@@ -1,0 +1,89 @@
+.code-like-pro {
+
+    ol {
+        font-size: 1rem;
+        margin-top: 0.75rem;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+
+        @media (min-width: 48em) {
+            padding-left: 2rem;
+        }
+
+        li {
+            font-size: 0.9rem;
+            padding: 0.5rem 0;
+            text-align: justify;
+        }
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+
+    p:nth-child(5) {
+        margin-bottom: 3.5rem;
+    }
+
+    .solution {
+        font-size: 1.5rem;
+        margin: 2.25rem auto;
+
+        a {
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    .table-container {
+        max-width: 100%;
+        overflow-x: auto;
+        margin: 1.5rem auto;
+
+        table {
+            margin: 0 auto;
+        }
+    }
+
+    table {
+        border: 2px solid #333;
+        width: auto;
+        max-width: 100%;
+
+        tr {
+
+            td {
+                border-right: 1px solid #bbb;
+                padding: 0.3rem 0.7rem;
+                text-align: center;
+                font-size: 0.8rem;
+            }
+
+            th {
+                border-right: 1px solid #bbb;
+                border-bottom: 1px solid #999;
+                background-color: #e0eeff;
+                padding: 0.5rem 0.75rem;
+                text-align: center;
+                font-size: 0.85rem;
+            }
+        }
+    }
+
+    pre {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        padding: 0.5rem 1rem;
+    }
+}

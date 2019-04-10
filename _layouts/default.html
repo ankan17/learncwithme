@@ -1,109 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
 
-    <meta charset="utf-8" />
-	<meta http-equiv="x-ua-compatible" content="ie=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en-us">
 
-	<title>Learn C With Me {% if page.title %}- {{ page.title }} {% endif %}</title>
+    <head>
 
-    <meta property="og:url" content="https://www.facebook.com/learncwithme" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Learn C With Me" />
-    <meta property="og:description" content="A blog for C tutorials" />
-    <meta property="fb:admins" content="100001993370797"/>
-    <!-- <meta property="og:image" content="http://www.your-domain.com/path/image.jpg" /> -->
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta http-equiv="content-type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
+        <title>Learn C With Me {% if page.title %}- {{ page.title }} {% endif %}</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta property="og:url" content="https://www.facebook.com/learncwithme" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Learn C With Me" />
+        <meta property="og:description" content="A blog for tutorials on C for beginners and amateurs alike" />
+        <meta property="fb:admins" content="100001993370797"/>
+        <!-- <meta property="og:image" content="http://www.your-domain.com/path/image.jpg" /> -->
 
-	<link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
 
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+        <!-- Load bootstrap css and font awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+        <!-- Poole and lanyon css -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/poole.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/lanyon.css">
 
-</head>
-<body>
-    {% include google-analytics.html %}
-    {% include facebook_sdk.html %}
-	<div class="container-fluid">
-        <!-- Navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top site-navbar">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand brand" href="{{ site.baseurl }}">Learn C With Me</a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ site.baseurl }}"> Home </a></li>
-                        <!-- <li><a href="#"> My Website </a></li> -->
-                        <li><a href="{{ site.baseurl }}/archive"> Archive </a></li>
-                        <li><a href="{{ site.baseurl }}/practice"> Practice </a></li>
-                    </ul>
+        <!-- Syntax css for code highlighting -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+
+        <!-- Custom css -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        {% include sidebar.html %}
+
+        <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+        content to avoid any CSS collisions with our real content. -->
+        <div class="wrap">
+
+            <div class="masthead">
+                <div class="container">
+                    <h3 class="masthead-title">
+                        <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+                    </h3>
                 </div>
             </div>
-        </nav>
 
-		{{ content }}
-
-        <footer class="footer" id="contact">
-            <div class="container">
-                <div class="row row1">
-                    <div class="col-xs-12 col-sm-4 left">
-                        <p> Did you like the blog? Like my facebook page to get regular updates <p>
-                        <p><a href="https://www.facebook.com/learncwithme"> Learn C With Me </a></p>
-                        <div class="fb-like" data-href="https://www.facebook.com/learncwithme/" data-width="200" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 center">
-                        <h4>Connect with Me</h4>
-    					<ul>
-                            <li>
-                                <a class="btn btn-social-icon" href="https://www.facebook.com/friendyankan"><span class="fa fa-facebook-square"></span> Facebook </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-social-icon" href="https://plus.google.com/u/0/101331497280009937677"><span class="fa fa-google-plus-square"></span> Google+ </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-social-icon" href="https://www.github.com/ankan17"><span class="fa fa-github"></span> Github </a>
-                            </li>
-                            <!-- <li>
-                                <a class="btn btn-social-icon"><span class="fa fa-pinterest"></span> Pinterest </a>
-                            </li> -->
-                            <li>
-                                <a class="btn btn-social-icon" href="https://www.quora.com/profile/Ankan-Poddar"><span class="fa fa-quora"></span> Quora </a>
-                            </li>
-    					</ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 right">
-                        <p> Have any query, suggestion, complaint or complement? Feel free to drop a few words at </p>
-                        <a> ankan.learncwithme@gmail.com </a>
-                        <p> Copyright &copy; 2017 by Ankan Poddar<br />
-                            All Rights Reserved </p>
-                    </div>
-                </div>
-                <div class="row row2">
-                    <div class="col-xs-12">
-                        <p class="text-center"> &copy; 2017, {} Made with <span class="glyphicon glyphicon-heart"></span> by Ankan Poddar </p>
-                    </div>
-                </div>
+            <div class="content">
+                {{ content }}
             </div>
-        </footer>
-	</div>
-</body>
+
+            {% include footer.html %}
+
+        </div>
+
+        <!-- Sidebar toggler -->
+        <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+        <!-- Load Jquery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+        <!-- Load Tether and Bootstrap javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+        <!-- Load Jgestures Plugin for swipe events -->
+        <script src="{{ site.baseurl }}/js/jgestures.min.js"></script>
+
+        <!-- Load Custom javascript -->
+        <script src="{{ site.baseurl }}/js/main.js"></script>
+
+        <script>
+        // (function(document) {
+        //   var toggle = document.querySelector('.sidebar-toggle');
+        //   var sidebar = document.querySelector('#sidebar');
+        //   var checkbox = document.querySelector('#sidebar-checkbox');
+        //
+        //   document.addEventListener('click', function(e) {
+        //     var target = e.target;
+        //
+        //     if(!checkbox.checked ||
+        //        sidebar.contains(target) ||
+        //        (target === checkbox || target === toggle)) return;
+        //
+        //     checkbox.checked = false;
+        //   }, false);
+        // })(document);
+        </script>
+
+        {% include google-analytics.html %}
+
+        {% include facebook_sdk.html %}
+
+    </body>
 </html>

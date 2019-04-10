@@ -1,4 +1,4 @@
 _site
 node_modules
 .jekyll-metadata
-_config.yml
+.DS_Store

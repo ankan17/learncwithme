@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="container page-container home">
+
+    {% if paginator.page == 1 %}
+        <h2 class="heading">Here are some of my recent posts</h1>
+    {% endif %}
+
+    {{ content }}
+
+    <!-- Pagination links -->
+    <div class="pagination">
+
+        {% if paginator.previous_page %}
+            {% if paginator.page == 2 %}
+            <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
+            {% else %}
+            <a class="pagination-item newer" href="{{ site.baseurl }}{{paginator.previous_page_path }}">Newer</a>
+            {% endif %}
+        {% else %}
+            <span class="pagination-item newer">Newer</span>
+        {% endif %}
+
+        {% if paginator.next_page %}
+            <a class="pagination-item older" href="{{ site.baseurl }}{{paginator.next_page_path }}">Older</a>
+        {% else %}
+            <span class="pagination-item older">Older</span>
+        {% endif %}
+
+    </div>
+
+
+
+    <h1 class="text-center">Meet Me</h1>
+    <p class="text-center lead"> The person behind the blog</p>
+    <div class="row">
+        <div class="col-12 col-md-12">
+            <!-- <div class="my-image"></div> -->
+            <p class="text-justify">A computer and a slow internet connection can get you places if you just have the will to learn. From being a complete noob programmer at 18 years of age to starting open-source development at 19 and completing GSoC 2018 at 20, this is my story.</p>
+            <p class="text-justify">When I came to college, I saw how people struggled with C and so I started this blog in my first year of college for people who think that C is very tough to learn. I intend to help beginners learn C and help those who already know about C to strengthen their grasp with the help of the content I am providing and I also learn a lot in the process. I am a nobody and if I can do it, so can you.</p>
+        </div>
+    </div>
+
+</div>

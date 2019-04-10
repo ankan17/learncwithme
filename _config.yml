@@ -1,24 +1,51 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Setup
+title:               Learn C With Me
+description:         'A blog for tutorials on C for beginners and amateurs alike.'
+url:                 https://ankan17.github.io
+baseurl:             '/learncwithme'
+
+# About/contact
+author:
+  name:              Ankan Poddar
+  email:             apoddar1701@gmail.com
+  github_username:   ankan17
+
+# Plugins
+plugins:
+  - jekyll-paginate
+
+# Collections
+collections:
+
+  code_like_pro:
+    output: true
+    permalink: /:collection/:title/
+
+  crazy_with_c:
+    output: true
+    permalink: /:collection/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: code_like_pro
+    values:
+      layout: code_like_pro
+
+  - scope:
+      path: ""
+      type: crazy_with_c
+    values:
+      title: "Crazy With C"
+      layout: crazy_with_c
 
 
+# Sass settings
+sass:
+  sass_dir:          _sass
+  style:             compressed
 
-#Site settings
-title: Learn C with Me
-email: friendyankan@gmail.com
-description: > # On this site, I am sharing the tutorials on C
-    written by me. The tutorials start from a very beginner level
-    and move to advanced topics as we go along.
-baseurl: "https://ankan17.github.io/learncwithme"
-url: "http://yourdomain.com"
-github_username: ankan17
-
-#Build settings
-markdown: kramdown
-exclude: ["README.md"]
-permalink: pretty
-future: false
+permalink:           /:title/
+paginate:            5
+exclude:             ["README.md"]
+future:              false

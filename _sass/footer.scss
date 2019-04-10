@@ -1,0 +1,143 @@
+.footer {
+
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: rgba(80,80,80,0.8);
+    border-top: 2px solid #ccc;
+
+    div.container {
+        max-width: 28rem;
+
+        @media (min-width: 38em) {
+            max-width: 36rem;
+        }
+
+        @media (min-width: 56em) {
+            max-width: 54rem;
+        }
+
+        div.row:nth-child(1) {
+
+            div:nth-child(1) {
+
+                @media (max-width: 48rem) {
+                    margin-bottom: 1.5rem;
+                    text-align: center;
+                }
+
+                p {
+                    margin-bottom: 1rem;
+                }
+
+                a {
+                    font-size: 2.25rem;
+                    line-height: 3rem;
+                    color: #36589c;
+
+                    &:hover {
+                        color: #5c88d9;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            div:nth-child(2) {
+
+                p {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    color: rgba(51,51,51,0.75);
+                }
+
+                .social-icons {
+                    list-style: none;
+                    padding-left: 0;
+                    width: 7.5rem;
+                    margin: 0 auto;
+
+                    a {
+                        font-size: 0.9rem;
+                        color: rgba(0,0,0,0.5);
+
+                        &:hover {
+                            color: rgba(0,0,0,0.7);
+                        }
+
+                        .fa {
+                            padding-right: 0.3rem;
+                        }
+
+                        .fa-facebook-square {
+                            color: #3B5998;
+                        }
+
+                        .fa-google-plus-square {
+                            color: #DD4B39;
+                        }
+
+                        .fa-github {
+                            color: #444444;
+                        }
+
+                        .fa-quora {
+                            color: rgba(200,0,0,0.8);
+                        }
+                    }
+                }
+            }
+
+            div:nth-child(3) {
+
+                @media (max-width: 48rem) {
+                    margin-top: 1.5rem;
+                    text-align: center;
+                }
+
+                p:nth-child(1) {
+                    font-size: 0.85rem;
+                    margin-bottom: 1.25rem;
+                }
+
+                a {
+                    font-size: 0.9rem;
+                    color: rgba(68,68,68,1);
+                    padding: 0.25rem 0.6rem;
+                    border: 1px solid #bfbfbf;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: rgba(68,68,68,0.75);
+                        cursor: pointer;
+                    }
+                }
+
+                p:nth-child(3) {
+                    font-size: 0.85rem;
+                    line-height: 1.75em;
+                    margin-top: 1.25rem;
+                }
+            }
+        }
+
+        div.row:nth-child(2) {
+
+            &::before {
+                content: "";
+                width: 60%;
+                margin: 1.5rem auto;
+                display: block;
+                border: 1px solid #898989;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .fa-heart {
+                color: rgba(200, 0, 0, 0.8);
+            }
+        }
+    }
+}

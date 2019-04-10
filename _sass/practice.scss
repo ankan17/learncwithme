@@ -1,0 +1,132 @@
+.practice.container {
+
+    div.col-12 {
+
+        margin-top: 3rem;
+
+        h2 {
+            font-size: 1.25rem;
+            font-family: 'Raleway', sans-serif;
+            margin: 1.25rem auto;
+
+            .lead {
+                font-size: 1rem;
+            }
+        }
+
+        ol {
+
+            padding-left: 1rem;
+
+            @media (min-width: 48em) {
+                padding-left: 2rem;
+            }
+
+            li {
+                padding: 0.25rem 0;
+
+                a {
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                .title {
+                    font-size: 1.05rem;
+                }
+
+                .meta {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}
+
+#crazy-with-c {
+    width: 75%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#crazy-with-c h1 {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#crazy-with-c p.lead {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#crazy-with-c p.lead::after {
+    content: "";
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+#crazy-with-c ol .question {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#crazy-with-c p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+// .practice ol {
+//     font-size: 20px;
+//     margin-bottom: 40px;
+// }
+
+#crazy-with-c ol .question figure {
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+#crazy-with-c ol .question pre code {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+#crazy-with-c ol .question .options {
+    margin: 20px 0;
+}
+
+#crazy-with-c ol .question .options div {
+    font-size: 18px;
+}
+
+#crazy-with-c .question .btn {
+    padding: 8px 15px;
+    font-size: 17px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+#crazy-with-c .solution {
+    font-size: 17px;
+    margin: 25px auto;
+    display: none;
+}
+
+#crazy-with-c .solution strong {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#crazy-with-c a:hover {
+    text-decoration: none;
+}

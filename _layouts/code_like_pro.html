@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="container page-container code-like-pro">
+
+    <h1 class="text-center">Code Like Pro!</h1>
+    <p class="text-center lead">{{ page.title }}</p>
+
+    {{ content }}
+
+    {% if page.link %}
+    <p class="solution text-center">Find the solutions <a href="{{ page.link }}">here</a>.</p>
+    {% else %}
+    <p class="solution text-center">Solution will be uploaded soon.</p>
+    {% endif %}
+
+    <p>You are supposed to write the code for all problems and then check the solution file. The code present in the solution is supposed to be the best and most efficient code. You can mail your solution to me on <a>ankan.learncwithme@gmail.com</a> and I'll surely check it and if I find it better I'll put it in the solution.</p>
+
+    <!-- Facebook comments -->
+    <div class="fb-comments" data-href="http://ankan17.github.io{{ site.baseurl }}{{ page.url }}" data-width="100%" data-numposts="5"></div>
+
+    <!-- Pagination links -->
+    <div class="pagination">
+
+        {% if page.previous.url %}
+            <a class="pagination-item previous" href="{{ site.baseurl }}{{ page.previous.url }}">Previous</a>
+        {% else %}
+            <span class="pagination-item previous">Previous</span>
+        {% endif %}
+
+        {% if page.next.url %}
+            <a class="pagination-item next" href="{{ site.baseurl }}{{ page.next.url }}">Next</a>
+        {% else %}
+            <span class="pagination-item next">Next</span>
+        {% endif %}
+
+    </div>
+</div>
