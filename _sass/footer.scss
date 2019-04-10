@@ -30,7 +30,7 @@
                 }
 
                 a {
-                    font-size: 2.25rem;
+                    font-size: 2rem;
                     line-height: 3rem;
                     color: #36589c;
 
@@ -49,6 +49,7 @@
                     font-weight: 600;
                     font-size: 1rem;
                     color: rgba(51,51,51,0.75);
+                    margin-bottom: 0.75rem;
                 }
 
                 .social-icons {
@@ -73,17 +74,21 @@
                             color: #3B5998;
                         }
 
-                        .fa-google-plus-square {
-                            color: #DD4B39;
+                        .fa-linkedin-square {
+                            color: #007BB6;
                         }
 
                         .fa-github {
                             color: #444444;
                         }
 
-                        .fa-quora {
-                            color: rgba(200,0,0,0.8);
+                        .fa-twitter {
+                            color: #00ACED;
                         }
+                    }
+
+                    a.btn {
+                        padding: .45rem 1rem;
                     }
                 }
             }
