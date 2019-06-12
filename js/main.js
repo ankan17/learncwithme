@@ -12,7 +12,7 @@ $(function() {
         }
     });
 
-    jQuery('.content').bind('swipeleft', function(e) {
+    $('.content').bind('swipeleft', function(e) {
         if ($('#sidebar-checkbox').is(':checked')) {
             $('#sidebar-checkbox').prop('checked', false);
         }
@@ -23,8 +23,10 @@ $(function() {
     });
 
     $('.post-content h3,h4,h5').each(function() {
-        var classname = "level" + ($(this).get(0).tagName.slice(1,2) - 2).toString();
-        $('.table-of-contents ul').append("<li class=\"" + classname + "\"><a href=\"#\" scroll-to=\"#" + $(this).attr('id') + "\">" + $(this).html() + "</a></li>");
+      var tagName = $(this).get(0).tagName.slice(1,2)-2;
+      var id = $(this).attr('id');
+      var html = $(this).html();
+      $('.table-of-contents ul').append(`<li class="level${tagName}"><a href="#" scroll-to="#${id}">${html}</a></li>`);
     });
 
     $('.table-of-contents ul li a').click(function(e) {
@@ -50,11 +52,17 @@ $(function() {
         $('table').addClass("operators");
     }
 
-    if(window.location.pathname.indexOf("/about/") > -1) {
-        var currentDate = new Date();
-        var birthday = new Date(98, 0, 17);
-        var age = parseInt((currentDate - birthday)/(1000*60*60*24*365));
-        $('.about ul li:nth-child(2) .info').html(age + " yrs");
+    // if(window.location.pathname.indexOf("/about/") > -1) {
+    //     var currentDate = new Date();
+    //     var birthday = new Date(98, 0, 17);
+    //     var age = parseInt((currentDate - birthday)/(1000*60*60*24*365));
+    //     $('.about ul li:nth-child(2) .info').html(age + " yrs");
+    // }
+
+    // Insert problem tag for daily problems
+    if ($('.post-container input[type="hidden"]')) {
+      var label = $('.post-container input[type="hidden"]').attr('value')
+      $('#problem_statement').append(`<span class="tag ${label}">${label}</span>`);
     }
 
 });

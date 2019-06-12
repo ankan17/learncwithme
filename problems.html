@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="container page-container archive">
+  <h1 class="text-center">Daily Problems</h1>
+  <p class="text-center lead">Watch out for my solutions to common interview problems!
+    The problems are taken from <a href="https://www.dailycodingproblem.com/">Daily Coding Problems</a>
+  </p>
+  <div class="col" class="c-tutorial-series">
+    <ul>
+    {% for post in site.daily_problems %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <span class="title">{{ post.serial }}. {{ post.title }}</span>
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>

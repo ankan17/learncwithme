@@ -25,6 +25,10 @@ collections:
     output: true
     permalink: /:collection/:title/
 
+  daily_problems:
+    output: true
+    permalink: /:collection/:title/
+
 defaults:
   - scope:
       path: ""
@@ -38,6 +42,13 @@ defaults:
     values:
       title: "Crazy With C"
       layout: crazy_with_c
+
+  - scope:
+      path: ""
+      type: daily_problems
+    values:
+      title: "Daily Problems"
+      layout: daily_problems
 
 
 # Sass settings
