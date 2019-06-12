@@ -6,9 +6,9 @@ backend:
 media_folder: "images/posts"
 
 collections:
-  - name: "c-tutorial-series" # Used in routes, e.g., /admin/collections/blog
+  - name: "c_tutorial_series" # Used in routes, e.g., /admin/collections/blog
     label: "C Tutorial Series" # Used in the UI
-    folder: "_posts/c-tutorial-series" # The path to the folder where the documents are stored
+    folder: "_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -22,13 +22,12 @@ collections:
       - {label: "Category", name: "category", widget: "hidden", default: "c-tutorial-series"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "code-like-pro" # Used in routes, e.g., /admin/collections/blog
+  - name: "code_like_pro" # Used in routes, e.g., /admin/collections/blog
     label: "Code Like Pro" # Used in the UI
-    folder: "_posts/practice/code-like-pro" # The path to the folder where the documents are stored
+    folder: "_code-like-pro" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "code-like-pro"}
       - {label: "Category", name: "category", widget: "hidden", default: "practice"}
       - {label: "Sub-Category", name: "sub-category", widget: "hidden", default: "code-like-pro"}
       - {label: "Serial", name: "serial", widget: "string"}
@@ -37,15 +36,28 @@ collections:
       - {label: "Comments", name: "comments", widget: "hidden", default: "true"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "crazy-with-c" # Used in routes, e.g., /admin/collections/blog
+  - name: "crazy_with_c" # Used in routes, e.g., /admin/collections/blog
     label: "Crazy With C" # Used in the UI
-    folder: "_posts/practice/crazy-with-c" # The path to the folder where the documents are stored
+    folder: "_crazy_with_c" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "crazy-with-c"}
       - {label: "Category", name: "category", widget: "hidden", default: "practice"}
       - {label: "Sub-Category", name: "sub-category", widget: "hidden", default: "crazy-with-c"}
       - {label: "Serial", name: "serial", widget: "string"}
       - {label: "Comments", name: "comments", widget: "hidden", default: "true"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "daily-problems" # Used in routes, e.g., /admin/collections/blog
+    label: "Daily Problems" # Used in the UI
+    folder: "_daily_problems" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "daily_problems"}
+      - {label: "Category", name: "category", widget: "hidden", default: "daily_problems"}
+      - {label: "Serial", name: "serial", widget: "string"}
+      - {label: "Comments", name: "comments", widget: "hidden", default: "true"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Label", name: "label", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}

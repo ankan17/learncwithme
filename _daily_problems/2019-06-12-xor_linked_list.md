@@ -1,6 +1,5 @@
 ---
 layout: daily_problems
-serial: 1
 title: The XOR Linked List Problem
 comments: true
 category: daily_problems
