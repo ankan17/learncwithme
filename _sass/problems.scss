@@ -1,3 +1,8 @@
+h3.problem-list-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .tag {
   border-radius: 3px 0 0 3px;
   color: #111;
@@ -13,8 +18,23 @@
   -webkit-transition: color 0.2s;
 }
 
+.tag.small {
+  font-size: 13px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 15px 0 20px;
+}
+
 .tag.hard {
   background: #ff1744;
+}
+
+.tag.medium {
+  background: #ffb74d;
+}
+
+.tag.easy {
+  background: #81c784;
 }
 
 .tag::before {
@@ -29,6 +49,11 @@
   top: 10px;
 }
 
+.tag.small::before {
+  left: 7px;
+  top: 9px;
+}
+
 .tag::after {
   background: #fff;
   border-bottom: 13px solid transparent;
@@ -39,8 +64,21 @@
   top: 0;
 }
 
+.tag.small::after {
+  border-bottom: 12px solid transparent;
+  border-top: 12px solid transparent;
+}
+
 .tag.hard::after {
   border-left: 10px solid #ff1744;
+}
+
+.tag.medium::after {
+  border-left: 10px solid #ffb74d;
+}
+
+.tag.easy::after {
+  border-left: 10px solid #81c784;
 }
 
 .tag:hover {

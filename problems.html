@@ -7,13 +7,16 @@ layout: default
   <p class="text-center lead">Watch out for my solutions to common interview problems!
     The problems are taken from <a href="https://www.dailycodingproblem.com/">Daily Coding Problems</a>
   </p>
-  <div class="col" class="c-tutorial-series">
+  <div class="col" class="daily-problems">
     <ul>
     {% for post in site.daily_problems %}
       <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <span class="title">{{ post.serial }}. {{ post.title }}</span>
-        </a>
+        <h3 class="problem-list-title">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <span class="title">{{ forloop.index }}. {{ post.title }}</span>
+          </a>
+          <span class="tag small {{ post.label }}">{{ post.label }}</span>
+        </h3>
       </li>
     {% endfor %}
     </ul>
