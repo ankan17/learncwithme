@@ -76,26 +76,16 @@
         <!-- Load Jgestures Plugin for swipe events -->
         <script src="{{ site.baseurl }}/js/jgestures.min.js"></script>
 
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+              tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+            });
+        </script>
+        <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
         <!-- Load Custom javascript -->
         <script src="{{ site.baseurl }}/js/main.js"></script>
-
-        <script>
-        // (function(document) {
-        //   var toggle = document.querySelector('.sidebar-toggle');
-        //   var sidebar = document.querySelector('#sidebar');
-        //   var checkbox = document.querySelector('#sidebar-checkbox');
-        //
-        //   document.addEventListener('click', function(e) {
-        //     var target = e.target;
-        //
-        //     if(!checkbox.checked ||
-        //        sidebar.contains(target) ||
-        //        (target === checkbox || target === toggle)) return;
-        //
-        //     checkbox.checked = false;
-        //   }, false);
-        // })(document);
-        </script>
 
         {% include google-analytics.html %}
 

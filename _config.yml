@@ -60,3 +60,5 @@ permalink:           /:title/
 paginate:            5
 exclude:             ["README.md"]
 future:              false
+mathjax:             true
+mathjax2:            false 
