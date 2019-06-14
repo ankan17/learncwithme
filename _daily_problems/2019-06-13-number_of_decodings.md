@@ -1,6 +1,6 @@
 ---
 layout: daily_problems
-title: Number of decodings
+title: Number of Decodings
 comments: true
 category: daily_problems
 label: hard
@@ -139,13 +139,10 @@ int numDecodings_dp_optimised(string s) {
 ```
 
 After a lot of improvements, this solution looks good to me, so I'd leave it at this.
-Find all the source code [here](https://onlinegdb.com/ryt40JgJr). Don't forget
-to check out the bonus problems.
+Find all the source code [here](https://onlinegdb.com/ryt40JgJr){:target="_blank"}.
+Don't forget to check out the bonus problems.
 
 ### Bonus
 
 Implement the brute-force approach and the recursive dynamic programming solutions
 and time all the functions for an arbitrarily long input.
-
-**PS:** Subscribe to [Daily Coding Problems](https://dailycodingproblems.com) for
-more fun problems.

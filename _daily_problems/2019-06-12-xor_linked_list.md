@@ -208,6 +208,3 @@ Feel free to test out this program. You can find the source code to the solution
 Write methods to add element after any particular node, to traverse
 the list in forward direction and to traverse the list in reverse direction. If
 you want the solutions to this bonus problem, leave a comment below.
-
-**PS:** Subscribe to [Daily Coding Problems](https://dailycodingproblems.com) for
-more fun problems.
