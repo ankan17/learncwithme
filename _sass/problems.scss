@@ -80,12 +80,3 @@ h3.problem-list-title {
 .tag.easy::after {
   border-left: 10px solid #81c784;
 }
-
-.tag:hover {
-  background-color: crimson;
-  color: white;
-}
-
-.tag:hover::after {
-   border-left-color: crimson;
-}
