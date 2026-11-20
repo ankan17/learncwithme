@@ -67,7 +67,7 @@ I would urge you to try the reverse process on your own and then see the followi
 
 ![image-5-6]({{ site.baseurl }}/images/posts/5_6_Binary_To_Hexadecimal.png)
 
-We've have had enough of number conversion. We’ll take up modifiers next and see how these change the properties of the basic integer data type.
+We've had enough of number conversion. We’ll take up modifiers next and see how these change the properties of the basic integer data type.
 
 
 ### Modifiers
@@ -84,7 +84,7 @@ In C, not always does the modifier modify the size and range of the data type. W
 
 <span class="indented">**sizeof (short) <= sizeof (int) <= sizeof (long) <= sizeof (long long)**</span>
 
-Notice the sign. It’s an less than or equal to, implying there may or may not be a change. The following table gives the size and range of int used with the modifiers:
+Notice the sign. It’s a less-than-or-equal-to, implying there may or may not be a change. The following table gives the size and range of int used with the modifiers:
 
 <table class="modifiers">
     <tr>

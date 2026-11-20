@@ -8,7 +8,7 @@ comments: true
 1. Write a program to check if an entered number is even or odd, without using the % operator.
 2. Write a program to find the maximum of three numbers, using conditional operator.
 3. Write a program to check if an entered year is Leap Year or not. (**Hint:** A Leap Year is a year containing 366 days)
-4. A company hires 4 different types of employess: HR Personnel, Manager, Project Lead or Techie. Given the following information about the salary given to the employees of the company, write a program which accepts the basic salary of the employee and calculates the gross salary and also displays the employee type. (**Lower limit of basic salary is inclusive**)
+4. A company hires 4 different types of employees: HR Personnel, Manager, Project Lead or Techie. Given the following information about the salary given to the employees of the company, write a program which accepts the basic salary of the employee and calculates the gross salary and also displays the employee type. (**Lower limit of basic salary is inclusive**)
 
     <div class="table-container">
 

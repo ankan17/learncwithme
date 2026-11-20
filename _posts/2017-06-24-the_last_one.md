@@ -8,7 +8,7 @@ comments: true
 category: c_tutorial_series
 ---
 
-Woah, wait! What? The last one? If you are wondering if this is my last tutorial, no it’s not. It’s just that we are only left with the last basic data type, the character data type and hence the title. Relieved? Let’s see what this character data type has to offer.
+Whoa, wait! What? The last one? If you are wondering if this is my last tutorial, no it’s not. It’s just that we are only left with the last basic data type, the character data type and hence the title. Relieved? Let’s see what this character data type has to offer.
 
 
 ### The Character Data Type
@@ -22,7 +22,7 @@ That is all okay, but how to store a character like ‘A’ on a machine which u
 
 ### ASCII encoding
 
-ASCII is the abbreviated form of American Standard Code for Information Interchange. It is a character encoding standard that is used to represent text in computers, telecommunication equipments, and other devices. It means the ASCII encoding provides an international standard to represent characters as integer values which can be stored in the form of binary. Most systems use ASCII encoding to represent characters though there are systems which use other character-encodings. Most modern character-encoding schemes are based on ASCII, although they support many additional characters. Let’s look at the ASCII values for some important characters.
+ASCII is the abbreviated form of American Standard Code for Information Interchange. It is a character encoding standard that is used to represent text in computers, telecommunication equipment, and other devices. It means the ASCII encoding provides an international standard to represent characters as integer values which can be stored in the form of binary. Most systems use ASCII encoding to represent characters though there are systems which use other character-encodings. Most modern character-encoding schemes are based on ASCII, although they support many additional characters. Let’s look at the ASCII values for some important characters.
 
 
 | Character | ASCII value (decimal) |
