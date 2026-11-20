@@ -14,4 +14,4 @@ link: https://github.com/ankan17/code-like-pro/tree/master/basic-input-output
 7. Write a program to swap or interchange the contents of two integer variables, without using a third variable.
 8. Write a program to calculate the sum of the series: 1+2+3+4+...+n, where n is entered by the user, without using iteration or recursion. (**Hint:** Use Summation of Arithmetic Progression)
 9. Write a program to calculate the sum of the series: 1+2+4+8+...+2<sup>n</sup>, where n is entered by the user, without using iteration or recursion. (**Hint:** Use Summation of Geometric Progression)
-10. If the lengths of 3 sides of a triangle are provided as input, write a program to find the three angles of the triangle. (**Hint:** Use Coisine Formula)
+10. If the lengths of 3 sides of a triangle are provided as input, write a program to find the three angles of the triangle. (**Hint:** Use Cosine Formula)

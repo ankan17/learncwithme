@@ -75,7 +75,7 @@ for (<code class="highlighter-rouge">initialisation</code>;<code class="highligh
 }
 </pre>
 
-Usually the for loop is controlled by a loop variable. If you are not understanding what I am trying to say, it’s fine, just bear with me and it will unfold itself very soon. The first part is the initialization part where we initialize the loop variable. Next part is the condition, where we check if we want to run the loop any further or not. If this condition evaluates to false, the loop is over. Finally, we have the updation, where we update the loop variable. Sounds gibberish? I hope this will make some sense soon enough. We’ll take an example of the natural number printing program, which prints all the natural numbers upto n, where n is provided by the user.
+Usually the for loop is controlled by a loop variable. If you are not understanding what I am trying to say, it’s fine, just bear with me and it will unfold itself very soon. The first part is the initialization part where we initialize the loop variable. Next part is the condition, where we check if we want to run the loop any further or not. If this condition evaluates to false, the loop is over. Finally, we have the updation, where we update the loop variable. Sounds gibberish? I hope this will make some sense soon enough. We’ll take an example of the natural number printing program, which prints all the natural numbers up to n, where n is provided by the user.
 
 ```c
 #include <stdio.h>
@@ -138,7 +138,7 @@ int main() {
 }
 ```
 
-The output of this program is again **1 2 3 4 5**, but for different reasons this time. When i is less than or equal to 5, the condition of the if statement remains false and we just print the value of I. But when value of i becomes 6, the condition becomes true and we encounter the `continue` statement this time, which simply means all the lines of the loop body following it will be ignored. The value of i is again incremented in the next iteration and since the condition *i>5* is still true, we encounter the `continue` statement once again and again all lines beneath that are ignored. This happens everytime until the loop ends.
+The output of this program is again **1 2 3 4 5**, but for different reasons this time. When i is less than or equal to 5, the condition of the if statement remains false and we just print the value of I. But when value of i becomes 6, the condition becomes true and we encounter the `continue` statement this time, which simply means all the lines of the loop body following it will be ignored. The value of i is again incremented in the next iteration and since the condition *i>5* is still true, we encounter the `continue` statement once again and again all lines beneath that are ignored. This happens every time until the loop ends.
 
 Hope you have had a good understanding of the break and continue statements. Now, we can have a look at the different forms in which a valid for loop can be written.
 
@@ -284,7 +284,7 @@ I guess some explanation is due now. Let's understand the working of the code. A
 
 ![image-12-3]({{ site.baseurl }}/images/posts/12_3_Nested_Loop_Problem_Flowchart.png)
 
-Look at the flowchart. Try to understand it carefully. This will probably clear up things. As is the case with nesting of ifs, nesting of loops can also be done upto any level! It may seem now that nesting of loops is a very tough concept or that it's not very useful, but trust me, once you get the idea of it, it is going to be very easy to understand and implement and it is super useful in many cases. So much so, that there is no other way around it!
+Look at the flowchart. Try to understand it carefully. This will probably clear up things. As is the case with nesting of ifs, nesting of loops can also be done up to any level! It may seem now that nesting of loops is a very tough concept or that it's not very useful, but trust me, once you get the idea of it, it is going to be very easy to understand and implement and it is super useful in many cases. So much so, that there is no other way around it!
 
 ### The *goto* statement
 {:.p-mt-20}
@@ -331,7 +331,7 @@ int main() {
 
 Can you figure out the output of the above program on your own? Let me give out a hint. The above program uses *goto* as a replacement for looping.
 
-Seemingly useful, the use of *goto* is highly discouraged my many experts, the reason being *goto* makes the program obscure and it becomes a real challenge to trace the control flow of the program. This makes the program hard to understand and harder to debug or modify. Any program that uses a *goto* can be rewritten to avoid them.
+Seemingly useful, the use of *goto* is highly discouraged by many experts, the reason being *goto* makes the program obscure and it becomes a real challenge to trace the control flow of the program. This makes the program hard to understand and harder to debug or modify. Any program that uses a *goto* can be rewritten to avoid them.
 
 The only good use of *goto* is perhaps breaking out from nested loops, because *break* is only helpful to break out from the innermost loop in which it is used and the execution starts from the next line of code after the block. Look at the following demonstration. We want to break from both the loops when i becomes 2.
 
@@ -369,7 +369,7 @@ int main() {
 }
 ```
 
-See how *goto* helped us achieve what we wanted. Now since I said every program using *goto* can be written without using it, it becomes neccessary to show to you folks how the above solution can be achieved without using *goto*. So here it is!
+See how *goto* helped us achieve what we wanted. Now since I said every program using *goto* can be written without using it, it becomes necessary to show to you folks how the above solution can be achieved without using *goto*. So here it is!
 
 ```c
 #include <stdio.h>

@@ -66,11 +66,11 @@ int numDecodings(string s) {
 ```
 
 Special mention, the function `atoi` converts an ASCII string into integer. Here we
-have a recursive function with the recurence relation: $T_n = T_{n-1} + T_{n-2}$,
+have a recursive function with the recurrence relation: $T_n = T_{n-1} + T_{n-2}$,
 whose solution is O($2^n$). Though it seems better (and actually is a little better),
 but we did not improve much on the worst-case complexity front. Looking at the call
 stack we'd realise that this problem has the `overlapping subproblems` property
-alongwith the `optimal substructure` property, which makes Dynamic Programming
+along with the `optimal substructure` property, which makes Dynamic Programming
 an ideal candidate for the solution. Here is an iterative dynamic programming solution.
 
 ```c++

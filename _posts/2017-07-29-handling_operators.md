@@ -35,7 +35,7 @@ i = 22.0/7;
 b = 5*6;
 ```
 
-In the first assignment, what happens is this: we get 3.142857 on the right hand side of the assignment operator, sine division of float and int will return float. But on the left hand side we have an int variable. We cannot store a float in an int variable. So the float gets demoted to an int, 3 in our case, which gets stored into i. The exact opposite thing happens in case of the second assignment. 5*6 evaluates to 30 which is int, but we have float on the left hand side of the assignment. Hence, 30 gets promoted to 30.000000 which gets stored in b.
+In the first assignment, what happens is this: we get 3.142857 on the right hand side of the assignment operator, since division of float and int will return float. But on the left hand side we have an int variable. We cannot store a float in an int variable. So the float gets demoted to an int, 3 in our case, which gets stored into i. The exact opposite thing happens in case of the second assignment. 5*6 evaluates to 30 which is int, but we have float on the left hand side of the assignment. Hence, 30 gets promoted to 30.000000 which gets stored in b.
 
 There are two types of type conversions in C. Let’s discuss both of them.
 
@@ -75,7 +75,7 @@ We’ll try to write a program which accepts two integers and prints the result 
 #include <stdio.h>
 
 int main () {
-	/* Remember according to the question, we are consrained to take the input in two integers */
+	/* Remember according to the question, we are constrained to take the input in two integers */
 	int i, j;
 	scanf ("%d %d", &i, &j);
 
@@ -118,7 +118,7 @@ No memory wastage. Very simple. This is typecasting. What we have to do is just 
 
 ### Hierarchy of operations in C
 
-What happens when there are more than one operators in an expression? Which one gets executed first? For example, does the expression 2*3+6 correspond to (2*3)+6 or 2*(3+6)? To answer this one, we need to understand the concept of ‘hierarchy of operations’. **The priority or precedence in which the operations in an arithmetic expression are performed is called the hierarchy of operations.**
+What happens when there is more than one operator in an expression? Which one gets executed first? For example, does the expression 2*3+6 correspond to (2*3)+6 or 2*(3+6)? To answer this one, we need to understand the concept of ‘hierarchy of operations’. **The priority or precedence in which the operations in an arithmetic expression are performed is called the hierarchy of operations.**
 
 + The operators having the highest order of precedence are evaluated first in an expression. The general hierarchy of most common types of operators is: **Arithmetic > Relational > Logical > Assignment > Comma.** Among the arithmetic operators, the **%, / and *** operators enjoy higher priority over + and -.
 

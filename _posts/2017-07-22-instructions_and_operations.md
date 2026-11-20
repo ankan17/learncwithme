@@ -3,7 +3,7 @@ layout: posts
 serial: 8
 title: Instructions and Operations
 meta: Learning the grammar of C
-description: From data type, we move on to discuss about the types of instructions in C, operands and operators and different types of operators available in C
+description: From data type, we move on to discuss the types of instructions in C, operands and operators and different types of operators available in C
 comments: true
 category: c_tutorial_series
 ---
@@ -21,7 +21,7 @@ There are basically three types of instructions in C:
 
 + **Arithmetic (operational) instructions:** This type of instruction is used to perform arithmetic operations on constants and variables.
 
-+ **Control instructions:** This type of instruction is used to control the flow of execution of various statements of various statements in a C program.
++ **Control instructions:** This type of instruction is used to control the flow of execution of various statements in a C program.
 
 We’ll focus on the first two types of instructions in this tutorial since they are pretty elementary and we’ll need to use them in pretty much all of our programs. All the programs that we’ll write will certainly contain type declaration instructions and arithmetic (can be broadly called operational) instructions. We’ll take up the third type of instruction i.e., control instructions, from the next tutorial. They form an integral part of programs that we’ll create in future.
 
@@ -196,7 +196,7 @@ Though an arithmetic instruction looks harmless enough, yet one can commit very 
 
 **Increment/Decrement operators:** Except the increment or decrement operators, all other operators can work on variables as well as constants while the increment/decrement operators work only on variables. The increment/decrement operators can be of two types:
 
-+ **Prefix increment/decrement operator:** Here, the operator precedes the 	operand. For example, ++i, --j, etc. When this operator is used, the 	value of operand is increased first and then it’s value is used 	subsequently. For example, the following code will output 6.
++ **Prefix increment/decrement operator:** Here, the operator precedes the 	operand. For example, ++i, --j, etc. When this operator is used, the 	value of operand is increased first and then its value is used 	subsequently. For example, the following code will output 6.
 
     ```c
     int i = 5;
@@ -205,7 +205,7 @@ Though an arithmetic instruction looks harmless enough, yet one can commit very 
 
     This is because here the value of i is incremented to 6 first and then used in the printf() statement.
 
-+ **Postfix increment/decrement operator:** Here, the operator succeeds 	the 	operand. For example, i++, j--, etc. When this operator is 	used, the value of operand is used first and then it’s value is 	incremented. For example, the following code will output 5.
++ **Postfix increment/decrement operator:** Here, the operator succeeds 	the 	operand. For example, i++, j--, etc. When this operator is 	used, the value of operand is used first and then its value is 	incremented. For example, the following code will output 5.
 
     ```c
     int i = 5;
@@ -256,7 +256,7 @@ These are used to perform bit-level operations which will be discussed in future
 
 #### Assignment Operators
 
-An assignment operator is used for assigning a value to a variable. The most common assignment operator is =. All other assignment operators apart from = are used as short-hands to achieve to two tasks simultaneously: perform an arithmetic or bitwise operation and assign the new value to one of the variables. Let's look at the assignment operators available to us in C programming language.
+An assignment operator is used for assigning a value to a variable. The most common assignment operator is =. All other assignment operators apart from = are used as short-hands to achieve two tasks simultaneously: perform an arithmetic or bitwise operation and assign the new value to one of the variables. Let's look at the assignment operators available to us in C programming language.
 
 <div class="table-container">
 
@@ -342,4 +342,4 @@ As can be understood from the name of this class of instructions in C programmin
 3. **Repetition or Loop Control Instruction:** The Loop control instruction helps computer to execute a group of statements repeatedly.
 4. **Case Control Instruction:** Like decision control, case control instruction is also used for decision making.
 
-These control statements will be taken up very soon in the future tutorials. But before that we need to discuss some more concepts related to operators. Since this tutorial has already been long enough, instead of cramming them all up in this one, it will be better to separate them over two tutorials. So stay tuned for the next tutorial where we will discuss about the handling of operators in an expression.
+These control statements will be taken up very soon in the future tutorials. But before that we need to discuss some more concepts related to operators. Since this tutorial has already been long enough, instead of cramming them all up in this one, it will be better to separate them over two tutorials. So stay tuned for the next tutorial where we will discuss the handling of operators in an expression.

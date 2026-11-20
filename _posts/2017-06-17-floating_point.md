@@ -13,7 +13,7 @@ We covered the whole of integers but integers are not the only numbers that we n
 
 ### Fractional form
 
-The fractional form maybe used when the number to be represented is not very large or very small. We use this form of representation in our normal arithmetic. Following are the features of wrting a floating-point number in this form:
+The fractional form may be used when the number to be represented is not very large or very small. We use this form of representation in our normal arithmetic. Following are the features of writing a floating-point number in this form:
 + A floating-point number must have at least one digit.
 + There may or may not be a decimal point (radix point). If there is no decimal point, it is considered to be after the least significant bit i.e., the rightmost digit.
 + It may be positive or negative. Default sign is positive.
@@ -57,14 +57,14 @@ We can see that (0.33)<sub>10</sub> = (0.0101010...)<sub>2</sub>. When we try to
 
 <span class="indented">0.0101010 – 0.01011 = –0.0000010</span>
 
-This is a tie! So, we choose 0.01010 as our answer as the LSB is 0. The subtraction can be peformed just as we did in integers. Treat the numbers as integers, convert the negative number to two’s complement and add them.
+This is a tie! So, we choose 0.01010 as our answer as the LSB is 0. The subtraction can be performed just as we did in integers. Treat the numbers as integers, convert the negative number to two’s complement and add them.
 
 After learning the fractional form of representation of real numbers, let’s look at the second method of representation, the exponential form.
 
 ### Exponential form
 
 The exponential form is usually used when the value of the number to be represented is either too large or too small. However, C does not restrict us in any way from using either of the two forms of representation.
-In exponential form, the number is represented in two parts with an e or E in between. The part appearing before e is called mantissa or significand, whereas the part after the e is called exponent. Thus 0.000543 in fractional form maybe written as 5.43e-4 (which means 5.43x10<sup>-4</sup> in normal arithmetic). Here, 5.43 is the mantissa and -4 is the exponent.
+In exponential form, the number is represented in two parts with an e or E in between. The part appearing before e is called mantissa or significand, whereas the part after the e is called exponent. Thus 0.000543 in fractional form may be written as 5.43e-4 (which means 5.43x10<sup>-4</sup> in normal arithmetic). Here, 5.43 is the mantissa and -4 is the exponent.
 This a more scientific form of notation. Computers use this form to store floating point numbers (we’ll discuss that in a while). Following rules must be observed while writing real numbers in exponential form:
 1. The mantissa part and the exponent part should be separated by a letter e or E.
 2. The mantissa part may have a positive or negative sign. Default sign is positive.
@@ -117,7 +117,7 @@ IEEE-754 standard reserves some bit patterns for some special numbers which are 
 + **Zero:** Zero is represented with all 0’s in exponent and mantissa bits. But the sign bit can be 0 or 1 denoting +0 or -0. This may seem useless but this has some practical uses. When two very close numbers are subtracted, the result may not be exactly 0 but very close to 0. In that case, when we do the subtraction the sign remains preserved and we can tell which number was greater.
 + **Denormalized numbers:** In the scheme of representation described above, we were using normalized form of representation, meaning we were implicitly assuming there is a 1 before the radix. The minimum number we can represent in this way is 1.00000000000000000000000x2<sup>-126</sup> (or 2<sup>-126</sup>). See that if the exponent was -127, we would have ended up having 0 at all bits of the exponent and also we have 0’s at all mantissa bits. But 0 at all places represent 0. So -126 will be the least exponent we can represent using normalized form.
 
-    What happens when the number is still smaller? Do we not store that? This situation is called underflow. If we cannot store that we’ll have sudden loss of data. I mean if we try to subtract numbers the difference between which is smaller than the smallest possible number we can represent using nomalized form, we will need to store 0 and the result won’t be very accurate.
+    What happens when the number is still smaller? Do we not store that? This situation is called underflow. If we cannot store that we’ll have sudden loss of data. I mean if we try to subtract numbers the difference between which is smaller than the smallest possible number we can represent using normalized form, we will need to store 0 and the result won’t be very accurate.
 
     That is why, when we reach this point, we let go of our assumption that the leading bit is 1. To reduce the loss of data when an underflow occurs, IEEE-754 includes the ability to represent fractions smaller than are possible in the normalized representation, by making the implicit leading digit a 0. Such numbers are called denormalized or denormal numbers. They don't include as many significant as a normalized number, but they slow down the loss of data when the result of an arithmetic operation is not exactly zero but is too close to zero to be represented by a normalized number.
 
